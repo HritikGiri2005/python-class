@@ -1,0 +1,1193 @@
+# print('''Hello world''')
+
+# #int
+# a=10
+# print(a)
+# print(type(a))
+
+# #float
+# b=10.1
+# print(a)
+# print(type(b))
+
+# #string
+# c='Hritik'
+# print(c)
+# print(type(c))
+
+# #boolean
+# d=True
+# print(d)
+# print(type(d))
+
+# #complex
+# e=3+6j
+# print(e)
+# print(type(e))
+
+# #decimal
+# f=0b10
+# print(f) 
+
+# #octal
+# l=0o12
+# print(l)
+
+
+# #hexadecimal 
+# g=0x213
+# print(g)
+
+
+#CONVERSIONS
+
+# print(bin(12))
+# print(bin(0o3434))
+# print(bin(0xface))
+
+# print(oct(12))
+# print(oct(0b1010))
+# print(oct(0x1010))
+
+# print(hex(12))
+# print(hex(0b1000))
+# print(hex(0o1000))
+
+#------------COMPLEX--------------------------
+
+# h= 2+3j
+# y= 4+7j
+# print(h)
+
+#--------------------------arithmetic operations-----------
+
+# print(h+y)
+# print(h-y)
+# print(h/y)
+# print(h*y)
+# print(h**y)
+# print(h%y)  #ERROR
+
+#-------------------------REAL AND IMAGINARY PART-----------------------
+
+# a=10+20j
+
+# print(a.real)
+# print(a.imag)
+
+#------------------------
+
+# a=0b10+20j  #applicable
+# print(a)
+
+# b=10+0b1010j  invalid syntax
+# print(b)
+
+
+#-----------------------------------BOOL DATATYPE-------------------------------
+
+
+# a= True
+# print(a)
+# print(type(a))
+
+
+#-----------------------------------STRING DATATYPE-------------------------------------
+
+# S = '''python
+#     is
+#     easy to learn'''
+
+# print(S)
+
+
+#---------------------------------------TYPE CASTING-------------------------------------------
+
+#---------------------------------------INT------------------------------------
+# print(int(10.5))
+# print(int('10'))
+# print(int('Ten'))  #ValueError: invalid literal for int() with base 10: 'Ten'
+# print(int(True))
+# print(int(False))
+
+# print(int(10+20j)) #TypeError: int() argument must be a string, a bytes-like object or a real number, not 'complex'
+
+
+#------------------------------FLOAT----------------------------------------
+
+
+# print(float(10))
+# print(float('10'))
+# print(float('Ten'))  #ValueError: invalid literal for float() could not convert string to float
+# print(float(True))
+# print(float(False))
+# print(float(10+20j))  #TypeError: float() argument must be a string, a bytes-like object or a real number, not 'complex'
+
+
+#-----------------------------------------------------COMPLEX----------------------------------
+
+
+#FORM 1
+#complex(x): x is a real part
+
+# print(complex(10))
+# print(complex(10.3))
+# print(complex(True))
+# print(complex("10"))
+
+# #FORM 2
+# #complex(x,y): x is a real part and y is an imaginary part
+
+# print(complex(10,20))
+# print(complex(10.3,20))
+# print(complex(True,20))
+# print(complex("10",20))  #TypeError: complex() can't take second arg if first is a 
+
+
+
+# #---------------------------------------------BOOL-----------------------------
+
+# print(bool(10))  #true
+# print(bool(10.0))  #true
+# print(bool(0.1))  #true
+# print(bool(0.0))  #fasle
+# print(bool(0))  #false
+
+# print(bool(1+2j))  #true
+# print(bool(1+20j))  #true
+# print(bool(0+2j))  #true
+# print(bool(1+0j))  #true
+# print(bool(0+0j))  #false
+
+# print(bool('')) #false
+# print(bool(' ')) #true
+# print(bool('true')) #true
+
+# #----------------------------------STRING-------------------------------
+
+# print(str(10))
+# print(str(True))
+# print(str(10+20j))
+# print(str(10.5))
+
+
+#--------------------------------------OPERATORS---------------------------------
+
+#------------------------ARITHMETIC OPERATORS-------------------
+
+# a=10
+# b=2
+
+# print("a+b = ", a+b)
+# print("a-b = ", a-b)
+# print("a/b = ", a/b) #always return result in float type
+# print("a*b = ", a*b)
+# print("a//b = ", a//b) #result change according to both the operands
+
+#for string type if we use + operator then both args must be str type only
+# print('java' + 'python')
+# print("Java" + 10) #TypeError: can only concatenate str (not "int") to str
+
+#for string type if we use * operator then both args must be int type only
+# print('java'*3)
+# print((3*2) * 'python')
+# print('java'*'python')  #TypeError: can't multiply sequence by non-int of type 'str'
+
+
+# print(10/0) #ZeroDivisionError: division by zero
+
+
+#---------------------------------RELATIONAL OPERATOR---------------------------
+#>,<,<=,>=
+# print(100>500)
+# print(100<200)
+# print(100>=100)
+# print('java'>'python')
+# print(ord('j'))
+# print(ord('p'))
+# print('java'>200) #TypeError: '>' not supported between instances of 'str' and 'int'
+# print(True<200)
+#nesting of relational operators : if all are True then only result is True otherwise False
+# print(10>5>3>6)
+# print(10>5>3<6)
+
+
+#--------------------------------LOGICAL OPERATORS---------------------
+
+#and
+# print(True and True)
+# print(True and False)
+# print(False and True)
+# print(False and False)
+
+# #or
+# print(True or True)
+# print(True or False)
+# print(False or True)
+# print(False or False)
+
+# #not
+# print(not True)
+# print(not False)
+
+
+#----------------------------NON BOOLEAN TYPE-------------------------
+
+# X AND Y : RETURN X IF X IS FALSE OTHERWISE RETURN Y
+# print(100 and 200)
+# print(0 and 10)
+# print('java' and 'python')
+# print('' and ' ')
+
+# # X OR Y : RETURN X IF X IS TRUE OTHERWISE RETURN Y
+# print(100 or 200)
+# print(0 or 10)
+# print('java' or 'python')
+# print('' or ' ')
+
+
+# #EQUALITY OPERATOR(==,!=) APPLICATBLE FOR SAME TYPE AS WELL AS DIFFERENT TYPE
+
+# print(100==200)
+# print(100!=200)
+# print('java' == 'java')
+# print('java' == 'python')
+# print('java' != 200)
+
+# #MEMBERSHIP OPERATOR : in , not in
+# s= 'python is simple'
+# print('python' in s)
+# print('python' not in s)
+
+# # #IDENTITY OP : is , is not
+# a=10
+# b=20
+# c=10
+
+# print(a is b)
+# print(a is c)
+# print(a is not b)
+
+# -------------------------------------2nd saturday-------------------------------
+# INPUT OUTPUT STATEMENTS
+# rv = int(input("Enter a number"))
+# print(rv)
+# print(type(rv))
+
+#wap to take eid,ename,esal,emarried_status from user and print it
+
+# eid=int(input("enter the employee id: "))
+# ename=str(input("enter your name: "))
+# esal=int(input("enter your salary: "))
+# emarried_status=str(input("enter your maritial status: "))
+
+# print(eid,ename,esal,emarried_status,sep="-")
+
+#OUTPUT STATEMENT
+# print('Hello')
+# print('hello'+'world')
+# print('hello \t world \n ji')
+
+# a=10
+# b=20
+# c=20
+
+# print(a,b,b,sep="*")
+
+# name='AAA'
+# marks= 98.23
+# rollno= 111
+# print("name :",name)
+# print("Marks :",marks)
+# print("rollno :",rollno)
+
+# print(f"hello {name}, roll number {rollno} you got {marks}% congratulations")
+
+# print('hello',end=' ')
+# print('how are your',end=' ')
+# print('goodmorning')
+
+
+#format()
+
+# name='AAA'
+# marks= 98.23
+# rollno= 111
+
+# print("hello, {x} roll no {y} you got {z}% Congratulations".format(x=name,y=rollno,z=marks))
+
+
+
+
+
+
+
+# CONDITIONAL:
+# 1) if STATEMENT
+
+# if 10>5:
+#     print("hello welcome")
+
+# 2) if-else statement
+
+# if 10>5:
+#     print("welcome")
+
+# else:
+#     print("cant enter sorry")
+
+
+#WAP take 2 numbers from user print greatest number
+# num1 = int(input("Enter num1= "))
+# num2 = int(input("Enter num2= "))
+
+# if num1 > num2:
+#     print("number 1 is greater")
+
+# else:
+#     print("Number 2 is greater")
+
+
+#WAP take cp and sp print profit and loss
+
+# cp= int(input("enter cost price="))
+# sp= int(input("enter selling price= "))
+
+# if sp>cp:
+#     print("there's a profit ")
+
+# else:
+#     print("there's a loss")
+
+
+#ELIF STATEMENT
+
+# a = int(input("enter a number= "))
+
+# if a==0 :
+#     print("Zero")
+
+# elif a==1 :
+#     print("one")
+
+# elif a==2 :
+#     print("two")
+
+# elif a==3 :
+#     print("three")
+
+# elif a==4 :
+#     print("four")
+
+# elif a==5 :
+#     print("five")
+
+# elif a==6 :
+#     print("six")
+
+# elif a==7 :
+#     print("seven")
+
+# elif a==8 :
+#     print("eight")
+
+# elif a==9 :
+#     print("nine")
+
+# else:
+#     print("ENTER NUM BETWEEN 0-9 ")
+
+
+
+
+
+# WAP PRINT BUZZ IF NUM IS DIVISIBLE BY 5,PRINT FIZZ IF NUM IS DIVISIBLE BY 3,,PRINT BUZZ-FIZZ IF NUM IS DIVISIBLE BY 5&3, IF NOT BY BOTH PRINT THE NUMBER
+
+
+# a=int(input("Enter a number"))
+
+# if a%5==0 and a%3==0:
+#     print("BUZZ-FIZZ")
+
+# elif a%3==0:
+#     print("FIZZ")
+
+# elif a%5==0:
+#     print("BUZZ")
+
+# else:
+#     print(a)
+
+
+
+# for i in range(10):
+#     print(i)
+
+# for i in range(2,10):
+#     print(i)
+
+# for i in range(2,20,2):
+#     print(i)
+
+# n=int(input("enter a number"))
+# for i in range(n):
+#     print(str(i+1)*(n))
+
+# n = int(input("Enter a number: "))
+# for i in range(n):
+#     print((str(n-i)+" ")*n)
+
+
+#ASCII
+# n=int(input("Enter a number:"))
+# for i in range (n):
+#     print((chr(65+i)+" ")*n)
+
+
+# n=int(input("Enter a number:"))
+# for i in range(n):
+#     print((chr(65-i-1+n)+" ")*n)
+
+
+
+# n= int(input("Enter a number"))
+# for i in range(1,n+1):
+#     for j in range(i):
+#         print(i, end =' ')
+#     print()  # to create new line after each row
+
+
+#reverse pattern
+
+# n= int(input("Enter a number"))
+# for i in range(1,n):
+#     for j in range(i+1):
+#         print(n+1-i, end =' ')
+#     print()  # to create new line after each row
+
+
+#star pattern 
+
+# n= int(input("enter a number :"))
+# for i in range(n):
+#     for j in range(i+1):
+#         print('*',end=" ")
+#     print()
+
+# NUMBER PATTERNS
+
+# n= int(input("Enter a number :"))
+# for i in range(n):
+#     for j in range(i+1):
+#         print(chr(65+i),end=" ")
+#     print()
+
+
+# REVERSE NUMBER PATTERN
+
+# n = int(input("Enter a number :"))
+# for i in range(n):
+#     for j in range(n-i):
+#         print(chr(65+i),end=" ")
+#     print()
+
+
+
+# n = int(input("Enter a Number : "))
+# for i in range (1,n+1):
+#     print(" " * (n-i),end="")
+#     for j in range (i):
+#         print("*",end="")
+#     print()
+
+
+# n = int(input("Enter a Number : "))
+# for i in range (1,n+1):
+#     print(" " * (n-i),end="")
+#     for j in range (i):
+#         print(chr(64+i),end="")
+#     print()
+
+
+# ---------------------------------------------WHILE LOOP------------------------------------------------------------
+
+# i=1
+# while i<=10:
+#     print(i)
+#     i+=1
+
+# WAP to take name from user until it enters correct value
+# name= "python"
+# a = input("Enter the term: ")
+# while a!=name:
+#     a = input("Incorrect term, please enter again: ")
+# print("Correct term entered:",a)
+
+
+# WAP to take a number and print the table of it
+# num = int(input("Enter a number: "))
+# i=1
+# print("Table of",num,"is:")
+# while num>0 and i<=10:
+#     print(num * i)
+#     i=i+1
+
+# ------------------------------------------------------Break & Continue----------------------------------------------------------------
+
+# for i in range(11):
+#     if i==7:
+#         break
+#     print(i)
+
+# i=0
+# while i<10:
+#     if i==7:
+#         print("Breakin the loop at i =",i)
+#         break
+#     print(i)
+#     i+=1
+
+# for i in range(11):
+#     if i==5:
+#         continue
+#     print(i)
+
+# PROGRAM 1- A person is running.He completes 1 km . We have to ask whether he want to continue. If yes run for more 1km. if no print "OK". If 5km are completed then print "Congrats!".
+
+# init_km = 1
+# print("You have ran 1km")
+# while init_km<5:
+#     quest = input("Do you want to continue ? (yes/no)")
+#     if quest =="yes":
+#         init_km = init_km + 1
+#         print("You have ran ", init_km , "km")
+#     if quest == "no":
+#         print("OK")
+#         break
+#     if init_km==5:
+#         print("Congrats!")
+#         break
+
+# PROGRAM 2- Take speed from user in KM. Convert speed in mile/hr and print both speeds in km and miles.
+# speed = float(input("Enter your speed: "))
+# miles = speed*0.6213
+# print("Your speed in km/hr =",speed,"and your speed in Miles/hr is: ",miles)
+
+# PROGRAM 3 - Take 2 numbers from user and print its summation and multiplication
+# num1 = float(input("Enter Number 1 : "))
+# num2 = float(input("Enter Number 2 : "))
+
+# sum = num1 + num2
+# mult = num1 * num2
+
+# print("sum= ",sum,"Multiplication= ",mult)
+
+# PROGRAM 4 - take a number from user and print its square and cube
+
+# number =  float(input("Enter a number: "))
+
+# square = number ** 2
+# cube = number ** 3
+
+# print("Square of number is: ",square)
+# print("Cube of number is: ",cube)
+
+#PROGRAM 5 - take temperature input from user and print it in celcius and farenheit.
+# temp = float(input("Enter temperature: "))
+# farenheit = (temp * 9/5)+32
+
+# print("Temperature in celcius = ",temp , "& in farenheit = ",farenheit)
+
+# PROGRAM 6 - take length & breadth of rectangle and print its area and perimeter
+
+# len = float(input("Enter length of rectangle: "))
+# breadth = float(input("Enter breadth of rectangle: "))
+
+# Area = len*breadth
+# Perimeter = 2*(len+breadth)
+
+# print(f"Area of rectangle with lenghth = {len} & breadth = {breadth} is {Area} & Perimeter of Rectangle with length = {len} & breadth = {breadth} is {Perimeter}")
+
+#PROGRAM 7 - Take radius of a circle and print its area and circumference
+# radius = float(input("Enter a radius: "))
+# area = 3.14 * radius**2
+# circumference = 2 *3.14*radius
+
+# print(f"area = {area} & circumference = {circumference}")
+
+
+#------------------------------------ Accessing the string datatype------------------------------------------------------
+
+# Using index number
+# s='python'
+# print("Accessing the string using index number: ")
+# print(s[0]) # accessing the first character of the string
+# print(s[1]) # accessing the second character of the string
+# print(s[2]) # accessing the third character of the string
+# print(s[5])
+# print(s[7]) #This will give an IndexError: string out of range
+# print(s[-4]) #print 't'
+
+#Using Slicing
+# print(s[0:6:1])
+# print(s[2:5:2])
+# print(s[::])
+# print(s[-5:-1:2])
+# # print(s[0:6:2]) #This will give an IndexError: string index out
+
+
+#PROGRAM - take a string as input and print positive and negative index of the string
+# str = input("Enter a string: ")
+# print(str.__len__())
+# print("Positive Index Value: ")
+# for i in range(str.__len__()):
+#     print(i)
+# print("Negative index values:")
+# for i in range(str.__len__(),0):
+#     print(i)
+
+# # ------------------------------------------------------------------------------------------------------
+
+# # printing characters of a string using a loop
+# s='python'
+# for c in s:
+#     print(c)
+
+# # printing characters of a string using while loop
+# print("Using while loop")
+# i=0
+# while i<len(s):
+#     print(s[i])
+#     i=i+1
+
+# ----------------------------------------------------------------Functions of a String------------------------------
+# 1.index()
+# S="Python"
+# print(S.index("P")) #0
+# print(S.index("y")) #1
+# print(S.index("t")) #2
+# print(S.index("th")) #it will only print the index number of first character i.e. t
+# print(S.index("A")) #it will give error because A is not present in the string
+# X = 'Pythonpythonpython'
+# print(X.index('y',2)) #it will start searching from index 2 and will return the index of first occurence of y after the index2 
+# print(X.index('y',8,15)) #it will start search for y in the range of 8 to 15 and will return the index of first occurance of y in the range 
+
+
+#2.find()
+# a = 'Python'
+# print(a.find('P')) #0   
+# print(a.find('o')) #4
+# print(a.find('A')) #-1
+
+# 3.count()
+# a='PythonPythonPython'
+# print(a.count('P')) #3
+# print(a.count('y')) #3
+# print(a.count('A')) #0
+# print(a.count('th')) #3
+
+# 4.split()
+# s = 'Python is a programming language'
+# print(s.split()) #Default separator space
+
+# a='Python*is*a*programming*language'
+# print(a.split('*'))
+
+# 5.join()
+# l = ['Python','is','a','programming','language']
+# s = ' '.join(l) #joining with space
+# print(s) #Python is a programming language 
+
+# s = '*'.join(l) #joining with *
+# print(s) #Python*is*a*programming*language  
+
+
+# 6.replace(oldString, newString)
+# s= "Python is difficult to learn and difficult to understand"
+# print(s.replace('difficult', 'easy'))  # Replaces 'difficult' with 'easy'
+
+# ----------------------------------------------change case of the string----------------------------------------------------------
+
+# 7.upper()
+# s = "Python is a programming language"
+# print(s.upper())  # PYTHON IS A PROGRAMMING LANGUAGE
+
+# 8.lower()
+# s = "PyThOn"
+# print(s.lower())  # python
+
+# 9.title()
+# s= "python"
+# print(s.title())  # Python
+
+# 10.swapcase()
+# s = "Python is a Programming Language"
+# print(s.swapcase())  # pYTHON IS A pROGRAMMING lANGUAGE
+
+# ------------------------------------------------------------checking case of the string---------------------------------------------
+
+# 11.isalnum()
+# s = "Python123"
+# print(s.isalnum())  # True
+# s = "Python123"
+# print(s.isalnum())  # True
+# s= "Python@123"
+# print(s.isalnum())  # False, because of the '@' character
+
+# 12.isalpha()
+# s = "Python"
+# print(s.isalpha())  # True
+# s = "Python123"
+# print(s.isalpha())  # False, because of the '123'
+
+# 13.isupper()
+# s = "PYTHON"
+# print(s.isupper())  # True
+# s = "Python"
+# print(s.isupper())  # False
+
+# 14.islower()
+# s = "python"
+# print(s.islower())
+
+#  15.istitle()
+# s = "Python Is A Programming Language"
+# print(s.istitle())  # True
+
+# --------------------------------------------------------------------------------------------------------------------
+# WAP to take string input and print type of case
+# --------------------------------------------------------------------------------------------------------------------
+
+# name = input("Enter a String: ")
+# if name.isupper():
+#     print("the name is in upper case")
+# elif name.islower():
+#     print("the name is in lower case")
+# elif name.istitle():
+#     print("The name is in title case")
+# elif name.isalpha():
+#     print("The name is in alpha case")
+# elif name.isnumeric():
+#     print("the name is in numeric case")
+# elif name.isalnum():
+#     print("The name is in alpha numeric case")
+
+#--------------------------------------------------------------------------------------------------------------------
+# WAP that takes an input from A user, splits it into words and print them on the screen
+# --------------------------------------------------------------------------------------------------------------------
+# Fullname = input("Enter your name: ")
+# print(Fullname.split())
+
+# ---------------------------------------------------------------------------------------------------------------------
+# WAP that takes input from a user, convert it to upper case and print them on screen
+#-----------------------------------------------------------------------------------------------------------------------
+# name = input("Enter something: ")
+# print(name.upper())
+
+# -----------------------------------------------------------------------------------------------------------------------
+# WAP that prompts a user requesting email and then extracts the username
+#-------------------------------------------------------------------------------------------------------------------------
+# email = input("Enter email: ")
+# username = email.split('@')
+# print('Username is:',username[0])
+
+#-------------------------------------------------------------------------------------------------
+# Expand on the previous code to print "Hello FirstName LastName" FIRSTNAME.LASTNAME@GMAIL.COM
+#-------------------------------------------------------------------------------------------------
+# email = input("Enter your email: ")
+# username = email.split('@')
+# print('Hello',username[0])
+
+# ------------------------------------------------------------------------------------------------------
+# Write a code that requests the FIRSTNAME ,LASTNAME, AGE and prints : "HELLO "FIRSTNAME" "LASTNAME",
+# YOU ARE NOW "AGE", FYI: AGE IS JUST A NUMBER, YOU ARE YOUNGER THEN EVER"
+
+# firstname = str(input("Enter your first name: "))
+# lastname = str(input("Enter your last name: "))
+# age = int(input("Enter your age: "))
+# print(f"Hello {firstname} {lastname} you are now {age}, FYI: Age is just a number, you are younger than ever")
+
+# ------------------------------------------------------------------------------------
+# Repeat the previous exercise but print the name and age in a new line
+#------------------------------------------------------------------------------------------------
+# firstname = input("Enter your first name: ")
+# lastname = input("Enter your last name: ")
+# age = int(input("Enter your age: "))
+# print(f"Hello {firstname} {lastname}\nyou are now {age}, FYI: Age is just a number, you are younger than ever")
+
+# ---------------------------------------------------------------------------------------------
+# WAP that takes the user email and counts the number of username characters
+#------------------------------------------------------------------------------------------------
+# email = input("Enter your email: ")
+# username = email.split('@')
+# print("characters in username are: ",username[0].__len__())
+
+#List to be continued
+# list, tuple, set, frozenSet, dictonary => iterable objects 
+
+# --------------------CreatingList------------------------
+
+# l = [10, 20, 30]
+# print(l)
+# print(type(l)) 
+#OUTPUT => [10, 20, 30]
+# <class 'list'> 
+
+#emptyList
+# l = []
+# print(l)
+# print(type(l)) 
+# OUTPUT => <class 'list'>
+# []
+
+# l = ()
+# print(l)
+# print(type(l)) 
+# OUTPUT =>()
+# <class 'tuple'>
+
+# by using val
+# l = eval(input('Enter values: '))
+# print(l)
+# print(type(l))   
+# OUTPUT => Enter values: 88-33
+# 55
+# <class 'int'>
+
+# --------------------CRUD-operations------------------------------------------------------------------------------------------------
+
+### 1. Accessing element from list
+    # =>indexNo
+    # =>slice
+
+# ---------------------------------------------INDEX NUMBER--------------------------------------------------------------------------
+# l = [10, 20,'AA', True, 30 ,10]
+# print(l)
+# print(type(l))
+#indexNo 
+# print(l[0]) 
+# print(l[1]) 
+# print(l[2]) 
+# print(l[6]) #IndexError: list index out of range
+
+# -------------------------------------------SLICE OPERATOR---------------------------------------------------------------------------
+# print(l[1:5]) #OUTPUT=> [20, 'AA', True, 30]
+# print(l[5:1]) #OUTPUT=> [] the first index must be always greater
+# print(l[2:]) #OUTPUT=> ['AA', True, 30, 10]
+# print(l[::2]) #OUTPUT=> [10, 'AA', 30]
+# print(l[-5:-1]) #OUTPUT=> [20, 'AA', True, 30]
+
+### 2. Adding element in list
+
+#--------------------------------------------APPEND-------------------------------------------------------------------------------------
+# l = [10, 20, 30]
+# print(l)
+# print(type(l))
+# l.append(77) 
+# print(l)
+
+# ------------------------------------------INSERT-------------------------------------------------------------------------------------
+# l.insert(2, 88)
+# l.insert(-3, 'Apple')
+# print(l)
+# OUTPUT => [10, 20, 'Apple', 88, 30, 77]
+
+# l.insert(8, 'BBB') #if we specify indexNo which is greater than the maximum indexNo the element will be added to the end of the list
+# l.insert(-8, 'CCC') #if we specify indexNo which is greater than the maximum indexNo the element will be added to the start of the list
+
+# -------------------------------------------EXTEND-----------------------------------------------------------------------
+# l1 = ['AAA', 'BBB', 'CCC']
+# l2 = [10, 20, 30, 40]
+# l1.extend(l2)
+# print(l1)
+# OUTPUT => ['AAA', 'BBB', 'CCC', 10, 20, 30, 40]
+
+#----------------------------------------------POP----------------------------------------------------------------------------
+
+# l = [10, 20, 30, 40]
+# print(l)
+# print('Removed Element is/are:',  l.pop()) #removes last element
+# print(l) 
+# #output => Removed Element is/are: 40
+
+# print('Removed Element is/are:', l.pop(2)) #removes element from specified index
+# print(l)#output => Removed Element is/are: 30
+
+# print('Removed Element is/are:', l, l.pop(20)) #IndexError: list index out of range
+# print(l)
+# l= []
+# print('Removed Element is/are:', l, l.pop()) #IndexError: list index out of range
+# print(l)
+
+#-----------------------------------------REMOVE-------------------------------------------------------------------------------
+# l = [10, 20, 30, 40]
+# print(l)
+# l.remove(20)
+# print(l)
+# l.remove('AAA')
+# print(l) #ValueError: list.remove(x): x not in list
+
+#------------------------------------CLEAR-----------------------------------------------------------
+# l = [10, 20, 30, 40]
+# l.clear()
+# print(l)
+
+#---------------------------------------------Sorting List Elements-----------------------------------------------------
+# l = [2,4,3,6,5,1,9,7,8]
+# print(l)
+
+# l.sort() #default sorting /ascending order
+# print(l)
+# #OUTPUT:[1, 2, 3, 4, 5, 6, 7, 8, 9]
+
+# l.sort(reverse=True) #desending order sorting
+# print(l)
+# #OUTPUT:[9, 8, 7, 6, 5, 4, 3, 2, 1]
+
+# l=['cat', 'apple', 'bat']
+# l.sort()
+# print(l) #OUTPUT: ['apple', 'bat', 'cat']
+
+# for sorting list elements must be homogeneous 
+# l=['cat', 10, 'apple', 20, 'bat']
+# l.sort()
+# print(l) #TypeError: '<' not supported between instances of 'int' and 'str'
+
+# --------------------Other List functions-------------------------------------------------------------------
+
+# l= [1,2,2,1,3,5,6,4,3,5,7,8]
+
+##1. count()
+# print(l.count(1))
+# print(l.count(2))
+# print(l.count(5))
+# print(l.count(9)) #0
+
+##. index()
+# print(l.index(3))
+# print(l.index(3, 5))
+# print(l.index(3, 5, 9))
+
+##3. reverse()
+# l.reverse()
+# print(l) #OUTPUT => [8, 7, 5, 3, 4, 6, 5, 3, 1, 2, 2, 1]
+
+##4. length:
+# print('Total number of values/elements in list:', len(l) ) 
+
+##5. list Aliasing 
+# fruits = ['apple', 'mango', 'banana', 'orange']
+# print(fruits)
+
+# fruit_list = fruits #aliasing
+# print(fruit_list)
+
+# fruit_list[0] = 'Tomato'
+# print(fruit_list)#OUTPUT => ['Tomato', 'mango', 'banana', 'orange']
+# print(fruits) #OUTPUT => ['Tomato', 'mango', 'banana', 'orange']
+
+# l = [10, 20, 30]
+# l2 = l.copy()
+# print(l)
+# print(l2)
+# l[0] = 77 # the change is only happen in l not l2
+
+## the difference between aliasing and cloning is that if a change is made to one list then in cloning the only list which is change is changed in coloning both list changes.
+# another difference is that in cloning no new list is created the same list is assigned two names in alising two new list are available
+
+#---------------------------------LIST COMPARISON---------------------------------------------
+
+# l1 = [1,2,3,4,5]
+# l2 = [1,2,3,4,5]
+# l3 = [1,2,4,5]
+
+# print(l1==l2)
+# print(l1==l3)
+
+# l1 = ['apple','banana','cat']
+# l2 = ['apple','banana','cat']
+# print(l1 == l2)
+
+# l3 = [10,20,30]
+# print(l1 == l3)
+# print(l1>l3) #TypeError: '>' not supported between instances of 'str' and 'int'
+
+#--------------------------------------------------LIST COMPREHENSION---------------------------------------------------
+
+# l = [1,2,3,4]
+# out = []
+# for i in l:
+#     out.append(i*2)
+# print(out)
+
+# out = [i*i for i in range(1,5)]
+# print(out)
+
+# l=[10,20,30]
+# print(l)
+# print(id(l))
+# print('After modification')
+# l[0] = 777
+# print(l)
+# print(id(l)) #same id as before
+
+#------------------------------------------Tuples--------------------------------------------------
+
+#creation of tuple
+# t =(10,20,30,10,'AAA')
+# print(t)
+# print(type(t))
+
+#Empty Tuple
+# t=()
+# print(t)
+# print(type(t))
+
+#by using tuple()
+# t=tuple()
+# print(t)
+# print(type(t))
+
+#tuple for single element
+# t=10,
+# print(t)
+# print(type(t))
+
+# t=(10,)
+# print(t)
+# print(type(t))
+
+#---------------------------------------------Slicing and indexing in tuple----------------------------------------------------
+#----------------------------------------------------indexing--------------------------------------------------------------------
+# t=(10,20,30)
+# print(t[0]) #10
+# print(t[1]) #20
+# print(t[2]) #30
+# print(t[-1]) #30
+# print(t[-3]) #10
+# print(t[6]) #indexerror
+
+#---------------------------------------------------------slicing--------------------------------------
+# t=(10,20,30,40,50)
+# print(t[1:3]) #20,30
+# print(t[1:]) #20,30,40,50
+# print(t[:3]) #10,20,30
+# print(t[:]) #10,20,30,40,50
+
+#-----------------------------------------using for and while loops---------------------------------------------
+# t=(10,20,30,40,50)
+
+# # for loop
+# for i in t:
+#     print(i)
+
+# #while loop
+# i=0
+# while i<len(t):
+#     print(t[i])
+#     i=i+1
+
+
+
+
+#-----------------------------------------------methods----------------------------------------------------------------
+# t=(10,20,30,40,50,10)
+# print(t.index(30))
+# print(t.count(10))
+# # print(len(t))
+
+# t2 = sorted(t)
+# print(t)
+# print(t2)
+
+#min() and max()
+
+# t=(5,1,4,6,2,3)
+# print('Min element in tuple is :', min(t))
+# print('Max element in tuple is :', max(t))
+
+#tuple packing
+
+# a=10
+# b='kaustubh'
+# c=True
+# t=a,b,c #packing
+# print(t)
+# print(type(t))
+
+#tuple unpacking
+
+# t=(10,'kaustubh',True)
+# a,b,c=t
+# print(a)
+# print(b)
+# print(c) 
+
+
+#----------------------------------------Lists questions---------------------------------------------------
+#1. print 1st,2nd,last element in the list
+# names=["sara","chanel","mike","ryan","holy","alex","rob"]
+# print(names[0])
+# print(names[1])
+# print(names[-1])
+
+#2. print(1) all elements in the list,(2)"chanel""mitch""ryan",(3) First three elements, (4)Last three elements, (5) Skip each other element
+ 
+# names=["sara","chanel","mitch","ryan","holy","alex","rob"]
+# print(names)
+# print(names[1:4])
+# print(names[:3])
+# print(names[4:])
+# print(names[::2])
+
+#3. print (1)Sally,(2)sara,sally,joe(3)aly(with two different ways)
+
+# my_list = ["Mitch",["sara","sally","joe"],"peter","aly"]
+# print(my_list[1][1])
+# print(my_list[1])
+# print(my_list[3])
+# print(my_list[-1])
+
+# 4.print the length of the list and add your name to the list (External research)
+# my_list = ["Mitch",["sara","sally","joe"],"peter","aly"]
+# print(len(my_list))
+# my_list.append("Hritik")
+# print(my_list)
+
+# 5. remove peter from the list using two diff methods
+# my_list = ["Mitch",["sara","sally","joe"],"peter","aly"]
+# # my_list.remove("peter")
+# del my_list[-2]
+# print(my_list)
+
+#6. Sort elements in a list and reverse all elements to go from maximum to minimum
+# my_list = [50,20,30,10,40,15,45]
+# my_list.sort()
+# print(my_list)
+# my_list.reverse()
+# print(my_list)
+
+#7. create a new list that contains the last elements in the nested lists
+# grocery_list = [['chips','jelly','chocolate'],['sweet potatoes','potatoes'],['peanuts','protein bar']]
+# grocery = [grocery_list[0][-1],grocery_list[1][-1],grocery_list[2][-1]]
+# print(grocery)
+
+#8. create a list with 5 of your closest friends and sort them alphabetically
+
+friends = ['Saniya',"Rachit","Advay","Kshitij","Divya"]
+friends.sort()
+print(friends)
+
+
+
+
+
+
+
+
+
+
+
+
+
+

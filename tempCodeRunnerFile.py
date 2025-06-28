@@ -1,3 +1,2 @@
-t=tuple()
-print(t)
-print(type(t))
+print(s1.union(s2))
+# print(s1 | s2)

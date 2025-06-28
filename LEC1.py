@@ -113,7 +113,7 @@
 # print(int(10+20j)) #TypeError: int() argument must be a string, a bytes-like object or a real number, not 'complex'
 
 
-#------------------------------FLOAT----------------------------------------
+#-----------------------------------------------------FLOAT----------------------------------------
 
 
 # print(float(10))
@@ -1174,18 +1174,159 @@
 
 #8. create a list with 5 of your closest friends and sort them alphabetically
 
-friends = ['Saniya',"Rachit","Advay","Kshitij","Divya"]
-friends.sort()
-print(friends)
+# friends = ['Saniya',"Rachit","Advay","Kshitij","Divya"]
+# friends.sort()
+# print(friends)
+
+# ---------------------------------------------- SET ----------------------------------------------------- 
+
+# s = {5,1,2,4,6,3,2,True}
+# print(s) 
+#o/p: {1, 2, 3, 4, 5, 6}
+
+#---------------------print data using for loop---------------------------------------------------------
+# s = {5,1,2,4,6,3,2,True}
+# for i in s:
+#     print(i)
+
+# print('total elements in set:' ,len(s))
+
+#we cannnot print using while loop
+
+# ---------------------------------------Exmpty set--------------------------------------------------------
+# s = {}
+# print(s)
+# print(type(s))
+#<class 'dict'>
+
+# s = set()
+# print(s)
+# print(type(s))
+#set()
+#<class 'set'>
+
+# -----------------------------------Operations on set------------------------------------------------------------
+#1. add()
+# s = {2,3,4,5,6}
+# print(s)
+# s.add(100)
+#print(s)
+
+#2. update()
+
+# s ={2,3,4,5,6}
+# s.update([555,666,777],'Katrina',("Apple","Orange","Banana"),range(5,20,5))
+# print(s)
+
+#3. pop()
+
+# s ={20,30,40,50,60}
+# s.pop()
+# print(s) #o/p: {20, 40, 60, 30}
+# print(s.pop()) #returns random element from set
+
+#4. remove()
+
+# s ={20,30,40,50,60}
+# s.remove(30)
+# print(s) #o/p: {20, 40, 50, 60}
+# s.remove(111) #KeyError: 111
+# print(s)
+
+#5. clear()
+
+# s ={20,30,40,50,60}
+# s.clear()
+#print(s)
+
+#6. copy()
+
+# s1 ={20,30,40,50}
+# s2 = s1.copy()
+# print(s1)
+# print(s2)
+
+# {40, 50, 20, 30}
+# {40, 50, 20, 30}
+
+#7. sort()
+
+# s= {20,30,40,50}
+# s2=sorted(s)
+# print(s2)
+# [20, 30, 40, 50]
+
+#-------------------------------------------Mathematical Operations on set-------------------------------------------
+#1. union()
+# s1 = {10,20,30,40}
+# s2 = {30,40,50,60}
+# print(s1.union(s2))
+# print(s1 | s2)
+
+# #2. intersection()
+# print(s1.intersection(s2))
+
+# #3. difference()
+# print(s1.difference(s2))
+
+# {40, 10, 50, 20, 60, 30}
+# {40, 10, 50, 20, 60, 30}
+# {40, 30}
+# {10, 20}
+
+# WAP to take input from user and print vowels in it
+
+# name = set(input("Enter your name: "))
+# vowels ={"a","e","i","o","u"}
+# print (name.intersection(vowels))
 
 
+#--------------------------------------DICTIONARY----------------------------------------
+# d={}
+# print(d)
+# print(type(d))
+
+# --------------------OR------------------
+
+# d=dict()
+# print(d)
+# print(type(d))
+
+#if we already know the key-value pair in advance
+# d={'apple':200,'banana':50,'mango':250}
+# print(d)
+
+# d = dict({'apple':200,'banana':50,'mango':250})
+# print(d)
+
+# print (d['apple'])
+# print(d['Litchi']) #KeyError: 'Litchi'
 
 
+#Add element in dictionary if the key is not present
+# d['Oranges'] = 120
+# print(d) # {'apple': 200, 'banana': 50, 'mango': 250, 'Oranges': 120}
+
+#Add element in dict if the key is already present in dict
+# d['banana'] = 140
+# print(d) # {'apple': 200, 'banana': 140, 'mango': 250}
+
+#----------------------------Delete----------------------------------------------------
 
 
+# del d['banana']
+# print(d)  #{'apple': 200, 'mango': 250}
 
+#WAP: take input from user no_of_student and then add name and marks then print the dict
 
-
+number_of_students = int(input("Enter number of students: "))
+student_grade = {}
+for i in range(number_of_students):
+    name = str(input("Enter student name: "))
+    marks = int(input("Enter marks: "))
+    student_grade[name] = marks
+    
+print(student_grade)
 
 
 

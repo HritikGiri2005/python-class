@@ -220,7 +220,7 @@ List comprehension offers a short syntax for creating a new list
 2. insertion order is preserved
 3. heterogeneous objects are allowed
 4. indexing and slicing are allowed
-5. list is mutable
+5. List is mutable
 6. we can represent list object by using [] with comma separator
 
 # ---------------------------------------TUPLE-----------------------------------------------------------
@@ -232,10 +232,48 @@ tuple is read only version of list
 2. insertion order is preserved
 3. heterogeneous objects are allowed
 4. indexing and slicing are allowed
-5. list is immutable
+5. Tuple is immutable
 6. we can represent list object by using [] with comma separator
 
-#------------------------------------Slicing ---------------------------------------------------------
+# ------------------------------------ SET ---------------------------------------------------------
+
+1. duplicate objects are not allowed
+2. insertion order is not preserved
+3. Represented using {} or set()
+4. Heterogeneous data are allowed
+5.Indexing and slicing is not allowed
+6. by using while loop we cannot print the set as indexing and slicing is not possible
+
+# ----------------------------------Operations on set
+1. add() => it adds the specified element to the set
+2. update() => it adds multiple elements to the set only adds  iterable objects
+3. pop() => it removes random element from set
+4. remove() => it removes the specified element from the set
+5. clear() => it removes all the elements from the set
+6. copy() => it returns a copy of the set
+7. sorted() => it sorts the set but first convert to list
+
+# -----------------------------------Mathematical operations on set------------------------
+
+1. union() => it returns a set with all elements from the original sets
+2. intersection() => it returns a set with elements common to the original sets
+3. difference() => it returns a set with elements in the original set but not in the other set
+
+
+# --------------------------------------------------DICTIONARY---------------------------------------
+1. Values stored in key-value pairs
+2. Duplicate keys are not allowed
+3. Key must be immutable
+4. Key-value pairs are ordered
+
+#how to access value
+value = dic_name[key]
+
+# ------------------------------------------------CRUD in DICT----------------------------------------------
+
+1.add =>  dict_name['key'] = value 
+2. delete => del dict_name['key]
+
 
 
 

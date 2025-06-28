@@ -1319,14 +1319,62 @@
 
 #WAP: take input from user no_of_student and then add name and marks then print the dict
 
+# number_of_students = int(input("Enter number of students: "))
+# student_grade = {}
+# for i in range(number_of_students):
+#     name = str(input("Enter student name: "))
+#     marks = int(input("Enter marks: "))
+#     student_grade[name] = marks
+
+# print(student_grade)
+
+# ----------------------------------------------functions in dict---------------------------------------
+#1) get(key)
+
+d={'apple':200,'banana':50,'mango':250}
+# print(d.get('apple')) #200
+# print(d.get('litchi')) #None
+
+#2) get(key,default_value)
+
+# print(d.get('apple',100))
+# print(d.get('litchi',100)) #100
+
+#3) keys()
+
+# for k in d.keys():
+#     print(d)
+
+#4) values()
+
+# print(d.values())
+
+#5) items()
+# for i in d.items():
+#     print(i)
+
+
+#WAP if name present in dict print marks of that student_name
+
 number_of_students = int(input("Enter number of students: "))
 student_grade = {}
 for i in range(number_of_students):
-    name = str(input("Enter student name: "))
-    marks = int(input("Enter marks: "))
-    student_grade[name] = marks
-    
+     name = str(input("Enter student name: "))
+     marks = int(input("Enter marks: "))
+     student_grade[name] = marks
+
 print(student_grade)
+
+askname = input("Ask for student name: ")
+for n in student_grade:
+     if askname in student_grade:
+          print( "marks = ",student_grade.values())
+     else :
+          print("Student not found")
+
+
+
+
 
 
 

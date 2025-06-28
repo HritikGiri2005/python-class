@@ -269,10 +269,19 @@ tuple is read only version of list
 #how to access value
 value = dic_name[key]
 
-# ------------------------------------------------CRUD in DICT----------------------------------------------
+# ----------------------------------------------------------------------------------------------
 
 1.add =>  dict_name['key'] = value 
 2. delete => del dict_name['key]
+
+# --------------------------------------functions in dict-----------------------------------------
+
+1. get(key) => it returns the value for the given key if it exists in the dictionary
+2. get(key,default_value) => returns value of an specified key if the key is not available you will get default_value
+3. keys() => returns the list of all keys available in the dictionary
+4. values() => returns the list of all values available in the dictionary
+5. items() =>  returns list of all key-value present inside dict
+
 
 
 

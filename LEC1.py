@@ -1331,7 +1331,7 @@
 # ----------------------------------------------functions in dict---------------------------------------
 #1) get(key)
 
-d={'apple':200,'banana':50,'mango':250}
+# d={'apple':200,'banana':50,'mango':250}
 # print(d.get('apple')) #200
 # print(d.get('litchi')) #None
 
@@ -1356,25 +1356,234 @@ d={'apple':200,'banana':50,'mango':250}
 
 #WAP if name present in dict print marks of that student_name
 
-number_of_students = int(input("Enter number of students: "))
-student_grade = {}
-for i in range(number_of_students):
-     name = str(input("Enter student name: "))
-     marks = int(input("Enter marks: "))
-     student_grade[name] = marks
+# number_of_students = int(input("Enter number of students: "))
+# student_grade = {}
+# for i in range(number_of_students):
+#      name = str(input("Enter student name: "))
+#      marks = int(input("Enter marks: "))
+#      student_grade[name] = marks
 
-print(student_grade)
+# print(student_grade)
 
-askname = input("Ask for student name: ")
-for n in student_grade:
-     if askname in student_grade:
-          print( "marks = ",student_grade.values())
-     else :
-          print("Student not found")
+# askname = input("Ask for student name: ")
+# for n in student_grade:
+#      if askname in student_grade:
+#           print( "marks = ",student_grade.values())
+#      else :
+#           print("Student not found")
+
+# --------------------------------------------05-07-2025-----------------------------------------------------------------------
+# ----------------------------------------------------Assignment--------------------------------------------------------------
+
+#1. Create a dict with 3 of your fav friends and their respective age and print out the age of second name your choose
+
+# friends = {"Hritik" : 20,
+#            "Rachit" : 20,
+#            "Sushant" : 21,
+#            }
+# print(friends.get("Rachit"))
+
+#2. Create a dict with 3 of your fav friends and their respective hourly wage and obtain the avg of their salaries.
+
+# friends = {"Hritik" : 1000,
+#            "Rachit" : 200,
+#            "Sushant" : 2100,
+#            }
+# print(sum(friends.values()) / len(friends))
+
+# 3. Update the prev dict with two of your next fav friends and their respective salaries and obtain the avg of their salaries.
+
+# friends = {"Hritik" : 1000,
+#            "Rachit" : 200,
+#            "Sushant" : 2100,
+#            }
+# friends["Rohan"] = 1000
+# friends["Gohan"] = 2000
+
+# print(sum(friends.values())/len(friends))
+
+# 4. Write a code that multiplies all the elements in the following dictionary
+# 
+# my_dict = {'data1':500,
+#            'data2':-10,
+#            'data3':300}
+
+# result =1
+
+# for value in my_dict.values():
+#     result = result * value
+# print("Multiplication = ",result)
 
 
 
 
+#5. For each of the students list below calculate the avg of marks for the midterm and final exams for each student and put the average in a separate dict along with the student id
+
+# student_details = [
+#     {'student_id' : 1, 'subject': 'math', 'midterm' : 60, 'final' :85},
+#     {'student_id' : 2, 'subject': 'math', 'midterm' : 800, 'final' :78},
+#     {'student_id' : 3, 'subject': 'math', 'midterm' : 90, 'final' :85}
+# ]
+
+# avg_marks = {}
+# for student in student_details:
+#     for key, value in student.items():
+#         if key == 'student_id':
+#             student_id = value
+#         elif key == 'midterm':
+#                midterm = value
+#         elif key == 'final':
+#              final = value
+#              avg_marks[student_id] = (midterm + final) / 2
+# print(avg_marks)
+
+
+
+#6. repeat the prev exercise but add the avg in a new dict line with "average" as a key
+
+# student_details = [
+#     {'student_id' : 1, 'subject': 'math', 'midterm' : 60, 'final' :85},
+#     {'student_id' : 2, 'subject': 'math', 'midterm' : 800, 'final' :78},
+#     {'student_id' : 3, 'subject': 'math', 'midterm' : 90, 'final' :85}
+# ]
+
+# avg_marks = {}
+# for student in student_details:
+#      for key, value in student.items():
+#           if key == 'student_id':
+#                student_id = value
+#           elif key == 'midterm':
+#                midterm = value
+#           elif key == 'final':
+#                final = value
+#                avg_marks[student_id] = {'average': (midterm + final) / 2}
+# print(avg_marks)
+
+
+#7. square each element in the following dictionary
+# dictionary = {"C1" :[10,20,30],
+#               "C2" :[20,30,40]}
+# squared = {} 
+# for key, value in dictionary.items():
+#     squared[key] = [elem**2 for elem in value]
+# print(squared)
+
+
+
+#8. Create a list of all keys and a list of all the values and the total sum of all values
+# my_salary = {"alex":25,"sally":28,"dina":30}
+# keys = list(my_salary.keys())
+# values = list(my_salary.values())
+# total = sum(values)
+# print(keys,values,total)
+
+#9 obtain the length of the following dictionary and sort its elements
+# my_dict = {"sally": 23, "dina" : 22, "holy": 50,"Joe": 10,"Peter": 44}
+# print(len(my_dict))
+# print(sorted(my_dict.items()))
+
+
+#10. Filter out values that are greater than or equal to 30
+# my_dictionary = {"Key 1": 20,
+#                  "Key 2": 30,
+#                  "Key 3": 50}
+# for i in my_dictionary.values():
+#     if (i>=30):
+#         print(i)
+
+
+# ----------------------------------------------functions in python-----------------------------------------------------------
+
+# def sayHello():
+#     print("Hello Welcome to Python Function")
+
+# sayHello()
+
+#------function with parameters :Parameters are the input to the function
+# def sayHello(name):
+#     print("Hello",name)
+# sayHello("Hritik")
+
+#WAP to create a function which take number as a parameter and print square of number , double of number
+# def square_double(num):
+#     print("Square of number is:",num**2)
+#     print("double of number is: ",num*2)
+
+# square_double(4)
+
+
+#WAP to create a function which take list as a parameter and print double of all numbers present inside list
+# def double_list(num):
+#     for i in num:
+#         print(f"double of {i} is ",i*2)
+# double_list([1,2,3,4,5])
+
+#WAP to create a function which take number as a parameter and print table of that number
+# def table(num):
+#     for i in range(1,11):
+#         print(f"{num} x {i} =", num*i)
+
+# table(3)
+
+
+# -----------------------------------------Types of arguments-----------------------------------
+# 1. Position argument
+
+# def register(name,subject,duration,fees):
+#     print('name : ',name)
+#     print('subject : ',subject)
+#     print('duration : ',duration)
+#     print('fees : ',fees)
+
+# register("Hritik","Python",'6 months',35000)
+
+#2. Keyword argument
+
+# def register(name,subject,duration,fees):
+#     print('name : ',name)
+#     print('subject : ',subject)
+#     print('duration : ',duration)
+#     print('fees : ',fees)
+
+# register(name="Hritik",duration='6 months',subject="Python",fees=35000)
+
+#--------------Mixing of Positional and Keyword arguments-------------------
+# def register(name,subject,duration,fees):
+#     print('name : ',name)
+#     print('subject : ',subject)
+#     print('duration : ',duration)
+#     print('fees : ',fees)
+# register("Hritik",duration='6 months',subject="Python",fees=350) # positional argument first then keyword argument
+
+# 3. Default argument
+# def sum(a,b,c=0):
+#     print("sum of a,b,c is:",a+b+c)
+# sum(10,20)
+
+#-------------------------------Mixing of default and non default arguments-------------------
+# def sum(a,b,c=0):
+#     print("sum of a,b,c is:",a+b+c)
+# sum(10,20) # here c is default argument and a,b is non default
+             # non default first then default arguments
+
+#4. Variable argument
+# def f1(*a):
+#      print (a)
+#      print(type(a))
+
+# f1(2,3)
+# f1()
+# f1(3,4,5,6,6)
+
+# WAP create a function to add any number of args
+
+# def sum(*a):
+#     sum=0
+#     for i in a:
+#         sum+=i
+#         return sum
+    
+# print(sum(2,3))
 
 
 

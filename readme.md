@@ -282,6 +282,31 @@ value = dic_name[key]
 4. values() => returns the list of all values available in the dictionary
 5. items() =>  returns list of all key-value present inside dict
 
+# ---------------------------------Functions in Python---------------------------------
+:-Group of Predefined statements are called function
+
+1. for making block of code reusable
+2. Provides Moudality 
+
+# -----------------------Types of functions----------------------------------
+1. predefined functions: Which comes with python library  ex:input(),id(),int(),print()
+2. userdefined functions: Which is developed or defined by programmer based on business logic
+
+___syntax for user defined functions :
+def fun_name(parameter):
+//code
+
+return 
+
+we can define function in python using 2 keywords
+1) def ---------> mandatory
+2) return -----------> optional
+
+# -----------------------------------------Types of arguments-----------------------------------
+1. positional arguments => Position and number of arguments must be same, if we change position then result may be changed
+2. keyword arguments => Position and number of arguments does not matter, we can pass arguments by keyword
+3. default arguments => If we pass arguments then it will take that value otherwise it will take default value
+4. variable arguments => We can pass any number of arguments in function
 
 
 

@@ -1935,4 +1935,31 @@
 # print(math.e)
 
 
+#-------------------------------------------------Random()------------------------------------------------
+# import random
+# print(random.random())
+# print(random.random())
+# print(random.random())
+# print(random.random())
+
+#---------------------------random.uniform()-----------------------------------
+
+# import random
+
+# for i in range(5):
+#     print(random.uniform(5,9))
+#     print(random.randint(2,6))
+
+# names = ['Hritik', 'Rachit', 'Sushant', 'Kshitij', 'Divya']
+# print(random.choice(names))  # Randomly selects one name from the list
+
+
+# Program for generating 4 otps with six digits
+import random
+
+for i in range(4):
+    for j in range(6):
+        print(random.randint(0,9),end = ' ')
+    print()
+
 

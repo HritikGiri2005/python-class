@@ -369,22 +369,11 @@ We can access any file from anywhere in the same directory or from different dir
 **Syntax:**import math
 print(math.function_name())
 
+# -----------------------------------------------random module------------------------------------
+ It is used to generate a random values in the range of  0 - 1 
 
+We can use random.uniform(start,end) for generating random float values between the parameters inside the function.
 
+We can use random.randint(start,end) for generating random int values between the parameters inside the function.
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+choice(): it will select any random object and return it

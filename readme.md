@@ -309,7 +309,32 @@ we can define function in python using 2 keywords
 4. variable arguments => We can pass any number of arguments in function
 
 
+# -----------------------------------------Return Keyword--------------------------------------- 
 
+return : function can take parameter and process logic and return result by using return keyword
+
+By default return keyword returns none value
+
+# -----------------------------------Lambda function---------------------------
+
+anonnymous function which can take any number of arguments but can have only one expression
+anonnymous function :function without name
+adv : just for instant use / one time usage
+we use lambda keyword for creating annonymous function
+syntax: lambda input_list:expression
+
+# ---------------------------------------functions----------------------------
+
+map(): if we want to perform common operation for each and every element present inside sequence then we can go for map()
+
+map(func,sequence)
+
+filter(func,sequence) : if we want to perform common operation for
+some element present inside sequence then we can go for filter()
+
+
+import functools
+reduce(func,sequence) : 
 
 
 

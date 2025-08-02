@@ -1525,7 +1525,6 @@
 
 # table(3)
 
-
 # -----------------------------------------Types of arguments-----------------------------------
 # 1. Position argument
 
@@ -1582,8 +1581,208 @@
 #     for i in a:
 #         sum+=i
 #         return sum
-    
 # print(sum(2,3))
+
+# -------------------------------------------Return Keyword----------------------------------
+
+# def f1(name):
+#     return name.upper()
+
+# print(f1("python"))
+
+# rv = f1("java")
+# print(rv)
+
+# ------------python function can return multiple values----------------
+
+# def f1():
+#     a=10
+#     b=20
+#     c=30
+#     return (a+b+c)
+# print(f1())
+
+# ------------- default return------------
+
+# def f2():
+#     print("Hello")
+#     return 
+
+# print(f2())   #returns none value
+
+# WAP monkey problem-------------------
+
+# def monkey_smile(m1,m2):
+#     if((m1==m2)==True or False):
+#         return True
+    
+#     else:
+#         return False
+    
+# print(monkey_smile(True,False)) #returns False
+# print(monkey_smile(False,False)) #returns True
+# print(monkey_smile(True,True))   #returns True
+# print(monkey_smile(False,True))  #returns False
+
+# ------------------WAP police problem
+
+# def police(speed,birthday):
+#     if(birthday==True):
+#         speed=speed-5 
+#     if(60 < speed <= 80):
+#         return "Fine rs 500"
+#     elif(speed<=60):
+#         return 'No fine'
+#     else:
+#         return "fine 1000"
+    
+# print(police(86,True))
+
+#-----------------------------Lambda function---------------------------------------
+
+# def square(num):
+#     return num*num
+# print(square(5))
+
+#----with lambda function-----------------
+# sq=lambda num: num*num
+# print(sq(8))
+
+# -----WAP (num,num2) return biggest num
+
+# biggest = lambda num1,num2: max(num1,num2)
+# print(biggest(20,15))
+
+# -------WAP list ke andar ka naam whose length is divisible by 2-----------
+
+# li = ['AA','AAA','AAA','AAAAA','AAAA','AAAAAA','AAAAAAA'] 
+
+# even = lambda li : [i for i in li if len(i)%2==0]
+# print(even(li))
+
+
+#---WAP toupper(name) return name in capital letter--------------
+# namee = lambda name : name.upper()
+# print(namee("hritik"))
+
+#------------------------------Functions---------------------------
+# ----------1)map(func,sequence)
+
+# l = [10,20,30,40]
+# def double(list):
+#     return list *2
+# res = list(map(double,l))
+# print(res)
+
+# res = tuple(map(lambda list: list*2,l))
+# print(res)
+
+# res = set(map(lambda list: list*2,l))
+# print(res)
+
+# -----------2)filter(func,sequence)
+# l = [1,2,3,4,5,6,7,8]
+# l2 = list(filter(lambda num: num%2==0, l))
+# print(l2)
+
+
+#----------------------WAP where pname is laptop-------------------------------
+# product = [
+#     {'pid' : 111, 'pname': 'Mobile', 'price': 20000},
+#     {'pid' : 111, 'pname': 'Laptop', 'price': 120000},
+#     {'pid' : 111, 'pname': 'Mobile', 'price': 60000},
+#     {'pid' : 111, 'pname': 'Laptop', 'price': 113000},
+# ]
+
+# laptop = list(filter(lambda product: product['pname'] == 'Laptop', product))
+# print(laptop)
+
+#------------------------------reduce(func,sequence)-------------------------------
+
+# import functools
+# l = [1,2,3,4,5,6,7,8,9,10]
+# res = functools.reduce (lambda x,y: x+y, l)
+# print(res)
+
+# 1. WAP to take number from user and add that number in list reverse order(reverse() not in use)
+# ex: enter number 8
+# output: [8,7,6,5,4,3,2,1,0]
+
+# num = int(input("Enter a number: "))
+# l = []
+# for i in range(num, -1,-1):
+#     l.append(i)
+# print(l)
+
+
+# 2. WAP to take name from user and print common character from name 
+# ex: enter first name john
+# enter second name : Janardhan
+# out =['J','n']
+
+# first_name = set(input("Enter first name: "))
+# second_name = set(input("Enter second name: "))
+# inter = list(first_name.intersection(second_name))
+# print(inter)
+
+
+# 3. WAP to remove consecutive duplicate values from list
+# ex: [1,1,2,2,3,4,5,1,4,4,9,6,5,5]
+# out = [1,2,3,4,5,1,4,9,6,5]
+
+# l = [1,1,2,2,3,4,5,1,4,4,9,6,5,5]
+# l2 = list(filter(lambda i : [i for i in l if l.index(i) == l.index(i+1)]))
+# print(l2)
+
+
+
+
+
+
+# 4. WAP to create dictionary to add patients record like name,age,weight,bloodgroup and perform following operations
+# (no duplicate patients will be allowed)
+# (remove patients who are discharged)
+# (update patients weight if required)
+# (print particular patients record)
+
+#5. WAP to define function which take list as a parameter and square its elements and add inside another list
+
+# def square(l):
+#     l2 = []
+#     for i in l:
+#         l2.append(i*i)
+#     print(l2)
+# square([2,3,4,5,6,7])
+
+
+#6. WAP to print vowels from string (use filter())
+# st = "Hritik"
+# l2 = ['a','e','i','o','u','A','E','I','O','U']  
+# vowels =list(filter(lambda x: x in l2, st))
+# print(vowels)
+
+#7. WAP to reverse words of given sentence (reverse() not allowed)
+s ='Nuclear is the ultimate power of india'
+h = s.split()
+
+for i in range(len(h)-1,-1,-1):
+    print(h[i])
+
+# out='india of power ultimate the is nuclear' 
+
+
+
+
+
+
+
+
+# ---------------------------------------02-08-2025------------------------------------------------------------
+
+
+
+
+
 
 
 

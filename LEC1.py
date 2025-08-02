@@ -1762,11 +1762,11 @@
 # print(vowels)
 
 #7. WAP to reverse words of given sentence (reverse() not allowed)
-s ='Nuclear is the ultimate power of india'
-h = s.split()
+# s ='Nuclear is the ultimate power of india'
+# h = s.split()
 
-for i in range(len(h)-1,-1,-1):
-    print(h[i])
+# for i in range(len(h)-1,-1,-1):
+#     print(h[i])
 
 # out='india of power ultimate the is nuclear' 
 
@@ -1779,12 +1779,160 @@ for i in range(len(h)-1,-1,-1):
 
 # ---------------------------------------02-08-2025------------------------------------------------------------
 
+# ----------Nested Function----------
+
+# def outer():
+#     print('this is outer function')
+#     def inner():
+#         print('this is inner function')
+#     print('outer function is calling inner function')
+#     inner() 
+# outer()
+
+#function can return inner function 
+# def outer():
+#     print('this is outer function')
+#     def inner():
+#         print("This is inner function")
+#     print("Outer function is returning inner function")
+#     return inner
+
+# rf = outer()
+# rf()
+
+#types of variable in a python function
+
+# 1.local variable
+# def f1():
+#     a=10 #local variable
+#     print(a)
+# f1()
+
+# ex2:local variable can be accessed only within function
+
+# def f1():
+#     a=10
+#     print(a)
+# f1()
+
+# def f2():
+#     print(a) #NameError: name 'a' is not defined
+
+# f1()
+# f2()
+
+# 2.Global Variable 
+# a=10
+# def f1():
+#     print(a)
+
+# def f2():
+#     print(a)
+
+# f1()
+# f2()
 
 
+# Note: Global variable can be accessed in all functions present inside module (.py)
 
+# global keyword
+# -------------------
+# 1) To declare global keyword inside function
+# ex
+# def f1():
+#     global a
+#     a=10
+#     print(a)
+# def f2():
+#     print(a)
 
+# f1()
+# f2()
 
+# 2) to modify global variable value inside function
+# ex
+# a=10
+# def f1():
+#     global a
+#     a=100
+#     print(a)
+# def f2():
+#     print(a)
 
+# f1()
+# f2()
+
+# globals(): to access global variable inside function if global variable and ocal variable have same name
+
+# a=10
+# b=20
+
+# def f1():
+#     a=100
+#     b=200
+#     print(globals()['a']+globals()['b'])
+#     print(a+b)
+# f1()
+
+# -------------------------------------Modules import concept--------------------------
+
+# ex-1
+# import modimport
+
+# modimport.f1()
+# modimport.f2()
+# print(modimport.name)
+
+# #ex-2: module aliasing
+# import modimport as md
+# md.f1()
+# md.f2()
+# print(md.name)
+
+# # ex-3: from module import mem1,mem2,mem3
+# from modimport import f1, f2, name
+# f1()
+# f2()
+# print(name)
+
+# ex-4
+# from modimport import *
+# f1()
+# f2()
+# print(name)
+
+# ex-5: member aliasing
+# from modimport import f1 as fun1,f2 as fun2,name
+# fun1()
+# fun2()
+# print(name)
+
+# ex-6:
+# from modimport import f1 as fun1, f2 as fun2
+# from Modmport2 import f1, f2
+# fun1()
+# fun2()
+# f1()
+# f2()
+
+# ex-7
+# from ModImport.modimport2 import f1, f2,name
+
+# f1()
+# f2()
+# print(name)
+
+# import math
+
+# print(math.sqrt(16))  # OUTPUT: 4.0
+# print(math.pi)        # OUTPUT: 3.141592653589793
+# print(math.factorial(5))  # OUTPUT: 120
+# print(math.pow(2, 3))  # OUTPUT: 8.0
+# print(math.pow(2,3))
+# print(math.fsum([1,2,3,4,5,6,7]))
+# print(math.ceil(10.9))
+# print(math.floor(10.9))
+# print(math.e)
 
 
 

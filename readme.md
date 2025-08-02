@@ -336,6 +336,42 @@ some element present inside sequence then we can go for filter()
 import functools
 reduce(func,sequence) : 
 
+<!-- ------------------------------------------2nd august -->
+
+**Nested Function :** Function inside another function is called nested function
+
+# Types of variable in python function:
+
+1. local variable: variable which is declared inside function
+2. global variable: variable which is declared outside function
+
+
+Note: Global variable can be accessed in all functions present inside module (.py)
+
+# Global Keyword 
+
+1) To declare global keyword inside function
+
+# globals() 
+
+# globals(): to access global variable inside function if global variable and ocal variable have same name
+
+# Moudles,library and framework concept  
+
+
+Modules have functions and variables in it
+Lots of Modules combine to form a library
+lots of libraries combine to form a framework
+
+We can access any file from anywhere in the same directory or from different directories
+
+# -------------------------------Math Module-------------------------------- 
+**Syntax:**import math
+print(math.function_name())
+
+
+
+
 
 
 

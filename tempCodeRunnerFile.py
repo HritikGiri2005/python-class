@@ -1,2 +1,10 @@
-biggest = lambda num1,num2: max(num1,num2)
-# print(biggest(20,15))
+a=10
+# def f1():
+#     global a
+#     a=100
+#     print(a)
+# def f2():
+#     print(a)
+
+# f1()
+# f2()

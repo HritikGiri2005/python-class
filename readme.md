@@ -377,3 +377,13 @@ We can use random.uniform(start,end) for generating random float values between 
 We can use random.randint(start,end) for generating random int values between the parameters inside the function.
 
 choice(): it will select any random object and return it
+
+# --------------------------------------FILE HANDLING------------------------------------------------
+
+Reading and writing data from file is called file handling
+To Open file in Python, Python has a predefined function open('file_name','mode')
+
+modes:
+1. w: write data into the file , new file will be created if the specified file is not available
+2. r: read data from the file,new  file won't be created if the file doesn't exist, it is default mode 
+3. a: append data into the file, new file will be created if the file is not available

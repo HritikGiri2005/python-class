@@ -1955,11 +1955,77 @@
 
 
 # Program for generating 4 otps with six digits
-import random
+# import random
 
-for i in range(4):
-    for j in range(6):
-        print(random.randint(0,9),end = ' ')
-    print()
+# for i in range(4):
+#     for j in range(6):
+#         print(random.randint(0,9),end = ' ')
+#     print()
+
+#---------------------------------------------File Handling---------------------------------------------------------------
+
+# ex1:
+# f=open('myfile.txt','w')
+# print('file name : ',f.name)
+# print('file mode :',f.mode)
+# print('file is readable :',f.readable())
+# print('file is writable :',f.writable())
+# print('file is closed: ',f.closed)
+# f.close()
+# print('file is closed: ',f.closed)
+
+
+# writing data into file 
+# -----------------------------------
+# ex1: data is in the same row 
+# f=open('myfile.txt','w')
+# f.write("Apple")
+# f.write("Grapes")
+# f.write("Banana")
+
+# ex2: data is in the different rows
+# f=open('myfile.txt','w')
+# f.write("Apple\n")
+# f.write("Grapes\n")
+# f.write("Banana")
+
+# ex3: write list of lines 
+# f=open('myfile.txt','w')
+# courses = ['java\n','python\n','react\n']
+# f.writelines(courses)
+# f.close()
+# print('data is written in the file')
+
+# ex4: appending data inside file 
+# f=open('myfile.txt','a')
+# f.write('devops')
+# f.close()
+# print('data is written in the file')
+
+#-----------------------------------------------
+# reading data from file
+# -----------------------------------------------
+
+# ex1: reading all records from file 
+# f=open('myfile.txt','r')
+# print(f.read())
+# f.close()
+
+# ex2: reading nth number of records from file 
+# f=open('myfile.txt','r')
+# print(f.read(10))  #reads only 10 letters
+# f.close()
+
+# #ex3: reading only one line from file
+# f=open('myfile.txt',r)
+# print(f.readline())  #reads only one line
+# f.close()
+
+#ex4: read all lines from file
+f=open('myfile.txt','r')
+print(f.readlines()) #reads all lines
+f.close()  #close the file
+
+
 
 

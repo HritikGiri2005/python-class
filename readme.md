@@ -398,3 +398,12 @@ tell() function is used to get the current position of the file pointer
 
 # ----------------------------------------seek()-------------------------------------
 seek() function is used to change the position of the file pointer
+
+# --------------------------------------CSV-------------------------------------
+
+CSV stands for Comma Separated Values
+CSV is a simple file format used to store tabular data, such as a spreadsheet or a database
+CSV files are plain text files that contain data in a structured format, with each row representing a record
+CSV files are commonly used for data exchange between different applications and systems.
+
+import csv

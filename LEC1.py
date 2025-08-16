@@ -2072,33 +2072,57 @@
 
 
 #------------------------Program-------------------------
-import os
+# import os
 
-file_name = input("enter the file name:")
-with open(file_name,'w') as f:
-    f.write('orange\n')
-    f.write('apple\n')
-    f.write('banana\n')
-    f.write('kiwi\n')
-    f.write('papaya\n')
+# file_name = input("enter the file name:")
+# with open(file_name,'w') as f:
+#     f.write('orange\n')
+#     f.write('apple\n')
+#     f.write('banana\n')
+#     f.write('kiwi\n')
+#     f.write('papaya\n')
 
-if(os.path.isfile(file_name) and os.path.exists(file_name)):
-    print('before delete\n')
-    with open(file_name,'r') as f:
-        print(f.read())
+# if(os.path.isfile(file_name) and os.path.exists(file_name)):
+#     print('before delete\n')
+#     with open(file_name,'r') as f:
+#         print(f.read())
 
-    with open(file_name,'r') as f:
-        lines = f.readlines()
-        del lines[3]
+#     with open(file_name,'r') as f:
+#         lines = f.readlines()
+#         del lines[3]
 
-    with open(file_name, 'w') as f:
-        f.writelines(lines)
+#     with open(file_name, 'w') as f:
+#         f.writelines(lines)
 
-    print("After delete")
-    with open(file_name, 'r') as f:
-        print(f.read())
+#     print("After delete\n")
+#     with open(file_name, 'r') as f:
+#         print(f.read())
 
 
+#------------------------------------------------CSV-------------------------------------------
+# import csv
+# f= open('myfile.csv','w',newline='')
+# #create csv writer
+# csv_writer = csv.writer(f)
+# csv_writer.writerow(['Name','rollno','marks','address'])
+# csv_writer.writerow(['Rahul',1,90,'delhi'])
+# f.close()
+
+
+#--------------------------program--------------------------------------
+import csv
+f = open('students.csv', 'w', newline='')
+csv_writer = csv.writer(f)
+csv_writer.writerow(['Name', 'rollno', 'marks', 'address'])
+no_of_students = int(input("enter number of students: "))
+for i in range(no_of_students):
+    print('student ', i + 1)
+    name = input("enter name: ")
+    rollno = input("enter rollno: ")
+    marks = input("enter marks: ")
+    address = input("enter address: ")
+    csv_writer.writerow([name, rollno, marks, address])
+f.close()
 
 
 

@@ -2110,19 +2110,19 @@
 
 
 #--------------------------program--------------------------------------
-import csv
-f = open('students.csv', 'w', newline='')
-csv_writer = csv.writer(f)
-csv_writer.writerow(['Name', 'rollno', 'marks', 'address'])
-no_of_students = int(input("enter number of students: "))
-for i in range(no_of_students):
-    print('student ', i + 1)
-    name = input("enter name: ")
-    rollno = input("enter rollno: ")
-    marks = input("enter marks: ")
-    address = input("enter address: ")
-    csv_writer.writerow([name, rollno, marks, address])
-f.close()
+# import csv
+# f = open('students.csv', 'w', newline='')
+# csv_writer = csv.writer(f)
+# csv_writer.writerow(['Name', 'rollno', 'marks', 'address'])
+# no_of_students = int(input("enter number of students: "))
+# for i in range(no_of_students):
+#     print('student ', i + 1)
+#     name = input("enter name: ")
+#     rollno = input("enter rollno: ")
+#     marks = input("enter marks: ")
+#     address = input("enter address: ")
+#     csv_writer.writerow([name, rollno, marks, address])
+# f.close()
 
 
 

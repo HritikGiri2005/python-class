@@ -2022,9 +2022,83 @@
 # f.close()
 
 #ex4: read all lines from file
-f=open('myfile.txt','r')
-print(f.readlines()) #reads all lines
-f.close()  #close the file
+# f=open('myfile.txt','r')
+# print(f.readlines()) #reads all lines
+# f.close()  #close the file
+
+#--------------------------------------------file copy paste program-------------------------------
+
+# f1=open('myfile.txt','r')
+# f2=open('myfilecopy.txt','w')
+# f2.write(f1.read())
+# f2.close()
+# f1.close()
+
+# -----------------------------------------With Statements ----------------------------------
+#Ex:
+
+# with open('myfile.txt','r') as f:
+#     print(f.read())
+#     print('is file closed ::',f.closed) #returns false
+# print('is file closed ::',f.closed) #returns true
+
+# # ---------------------------------------tell()-----------------------------
+# # ex 
+# with open('myfile.txt','r') as f:
+#     print(f.tell()) #returns 0
+#     print(f.read(10)) #reads 10 letters
+#     print(f.tell()) #returns 10
+
+#-------------------------------------seek()--------------------------------------------
+# ex
+# with open('myfile.txt','r') as f:
+#     print(f.tell()) #returns 0
+#     f.seek(10) #sets the pointer to 10th position
+#     print(f.tell()) #returns 10
+
+
+# -------------------------------------OS Module ----------------------------------------------
+# import os
+
+# os.rename('myfile.txt','mynewfile.txt') #renamed the file myfile.txt to mynewfile.txt
+
+# file_exist = os.path.exists('fruit.txt')
+# print(file_exist) #returns false as file does not exist
+
+# is_file = os.path.isfile('ModImport')
+# print(is_file) #returns false as modimport is a folder
+
+# os.remove('myfilecopy.txt')
+
+
+#------------------------Program-------------------------
+import os
+
+file_name = input("enter the file name:")
+with open(file_name,'w') as f:
+    f.write('orange\n')
+    f.write('apple\n')
+    f.write('banana\n')
+    f.write('kiwi\n')
+    f.write('papaya\n')
+
+if(os.path.isfile(file_name) and os.path.exists(file_name)):
+    print('before delete\n')
+    with open(file_name,'r') as f:
+        print(f.read())
+
+    with open(file_name,'r') as f:
+        lines = f.readlines()
+        del lines[3]
+
+    with open(file_name, 'w') as f:
+        f.writelines(lines)
+
+    print("After delete")
+    with open(file_name, 'r') as f:
+        print(f.read())
+
+
 
 
 

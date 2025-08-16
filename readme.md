@@ -387,3 +387,14 @@ modes:
 1. w: write data into the file , new file will be created if the specified file is not available
 2. r: read data from the file,new  file won't be created if the file doesn't exist, it is default mode 
 3. a: append data into the file, new file will be created if the file is not available
+
+# ----------------------------------------With statement---------------------------------
+
+if we open any file by using with statement then after completing body the file will be closed automatically
+
+# -------------------------tell()---------------------------
+tell() function is used to get the current position of the file pointer
+
+
+# ----------------------------------------seek()-------------------------------------
+seek() function is used to change the position of the file pointer

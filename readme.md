@@ -449,6 +449,9 @@ else block is executed only when there's no exception inside the try block
 finally block is executed in any situation 
 hence it isused to close the file/resources
 
+# --------------------------------- user defined exception ------------------------------------------
+raise : it is used to forcefully bring exception
+
 
 
 

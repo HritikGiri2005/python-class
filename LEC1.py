@@ -2228,8 +2228,29 @@ try:
     print(10/0)
 except ZeroDivisionError as msg:
     print(msg)
-    
+
 finally:
     print('finally block executed')
     print('closing database')
+
+
+#------------------------------------User defined exception -------------------------------------------------
+
+class MinimumAge(Exception):
+    def __init__(self, msg):
+        super().__init__(msg)
+
+
+class MaxAge(Exception):
+    def __init__(self,msg):
+        super().__init__(msg)
+
+age = int(input('Enter your age: '))
+
+if age>21 and age < 79:
+    print('congrat... you are eligible for msg')
+elif age >= 80:
+    raise MaxAge('You already crossed the marriage limit ')
+else:
+    raise MinimumAge('sorry you are too small')
 

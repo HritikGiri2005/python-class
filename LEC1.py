@@ -2124,4 +2124,47 @@
 #     csv_writer.writerow([name, rollno, marks, address])
 # f.close()
 
-# -----------------------------------------Exception Handling-----------------------------
+# -----------------------------------------Exception Handling---------------------------------
+# ex1 :
+
+# print('statement 1')
+# try : 
+#     print(10/0)
+# except ZeroDivisionError:
+#     print('zero division error')
+# print('statement 3')
+# print('statement 4') 
+
+# ex2 :
+
+# print('statement 1')
+# try:
+#     print(a)
+# except NameError:
+#     print('Name error')
+# print('statement 3')
+
+# ex 3:
+
+# print('statement 1')
+# try:
+#     l = [1,2]
+#     print(l[3])
+# except IndexError:
+#     print('index error')
+# print('statement 3')
+
+
+# ex 4 :
+
+# print('statement 1')
+# try:
+#     print(10/0)
+#     print('hello') # this will not print
+# except ZeroDivisionError:
+#     print('Handled zero div error')
+# print('3rd state')
+# print('4th state')
+
+
+

@@ -2190,7 +2190,46 @@
 
 # 4)
 
+# try:
+#     print(10/0)
+# except :
+#     print("default except block")
+
+#----------------------username se filename lo and then open and read if not found then handle exception--------------------------
+
+# file_name = input('Enter file name :')
+
+# try: 
+#     f= open(file_name,'r')
+# except Exception as msg :
+#     print(msg)
+
+# ----------------------------------try-except-else------------------------------------------------------
+
+# ex1: else block is not executed
+# try:
+#     print(10/0)
+# except Exception as msg:
+#     print(msg)
+# else:
+#     print('else block is executed')
+
+# ex2: else block is executed
+# try:
+#     print(10/2)
+# except Exception as msg:
+#     print(msg)
+# else:
+#     print('else block is executed')
+
+# ----------------------------------try-except-finally------------------------------------------------------
+
 try:
     print(10/0)
-except :
-    print("default except block")
+except ZeroDivisionError as msg:
+    print(msg)
+    
+finally:
+    print('finally block executed')
+    print('closing database')
+

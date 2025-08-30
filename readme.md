@@ -440,5 +440,16 @@ syntax :
 1. Normal Termination
 2. rest of code will be executed
 
+**try-except-else**:
+
+else block is executed only when there's no exception inside the try block
+
+**try-except-finally :**
+
+finally block is executed in any situation 
+hence it isused to close the file/resources
+
+
+
 
 

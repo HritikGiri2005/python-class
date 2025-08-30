@@ -2124,6 +2124,4 @@
 #     csv_writer.writerow([name, rollno, marks, address])
 # f.close()
 
-
-
-
+# -----------------------------------------Exception Handling-----------------------------

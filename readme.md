@@ -407,3 +407,9 @@ CSV files are plain text files that contain data in a structured format, with ea
 CSV files are commonly used for data exchange between different applications and systems.
 
 import csv
+
+
+# ------------------------Exception / Error handling-------------------------------------------
+
+**Exception/Error :** Unwanted, Unexpected things that disturb normal flow of execution 
+

@@ -2166,5 +2166,31 @@
 # print('3rd state')
 # print('4th state')
 
+# 1) print message of the error
+
+# try:
+#     print(10/0)
+# except ZeroDivisionError as msg:
+#     print(msg)
+
+# 2)
+
+# try:
+#     print(10/0)
+# except (NameError,IndexError,ZeroDivisionError,ValueError) as msg:
+#     print(msg)
+
+# 3)
+
+# try:
+#     print(10/0)
+# except Exception as msg:
+#     print(msg)
 
 
+# 4)
+
+try:
+    print(10/0)
+except :
+    print("default except block")

@@ -413,9 +413,32 @@ import csv
 
 **Exception/Error :** Unwanted, Unexpected things that disturb normal flow of execution 
 
-**reasons of exception : ** 
+**reasons of exception :** 
 1. Human Error
 2. end user's input
 3. system's configuration problem
 4. Network issues
+
+**Disadvantages:**
+1. Abnormal Termination
+
+
+**What is meant by Exception Handling ?**
+--> Defining alternative way to make the flow of program normal
+
+**How we can handle the exceptions in python ?**
+--> By using try--except block
+
+syntax : 
+    try :
+        risky code
+    except exception_name :
+        alternative code
+
+
+**Advantages:**
+1. Normal Termination
+2. rest of code will be executed
+
+
 

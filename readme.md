@@ -413,3 +413,9 @@ import csv
 
 **Exception/Error :** Unwanted, Unexpected things that disturb normal flow of execution 
 
+**reasons of exception : ** 
+1. Human Error
+2. end user's input
+3. system's configuration problem
+4. Network issues
+

@@ -458,4 +458,24 @@ Object Oriented Programming
 
 
 
+3 Entities -- 3 properties and 2 behaviours
+1. Computers -- 1. size
+                2. resolution
+                3. company
+                1. power button 
+                2. open software
+                3. brightness
+2. air conditioner -- 1. company
+                      2. cooling
+                      3. warrenty
+                      1. power button
+                      2. timer
+                      3. swing
+3. students -- 1. height
+               2. weight
+               3. gender
+               1. laugh
+               2. raise hand
+
+
 

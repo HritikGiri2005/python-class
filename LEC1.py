@@ -2278,11 +2278,11 @@ print(Test.__doc__)
 
 class Person:
     # objects :
-    def __init__(self):
-        self.name = "Hritik"
-        self.age = 20
-        self.city = "thane"
-        self.gender = "Male"
+    def __init__(self,name,age,city,gender):
+        self.name = name
+        self.age = age
+        self.city = city
+        self.gender = gender
 
     # Methods :
     def eat(self):
@@ -2290,17 +2290,30 @@ class Person:
     def play(self):
         print('Playing ludo')
 
+    def person_info(self):
+        print('Person name :', self.name)
+        print('Person age :', self.age)
+        print('Person city :', self.city)
+        print('Person gender :', self.gender)
+
 
 # calling objects
-p1 = Person()
-print(p1.name)
-print(p1.age)
-print(p1.city)
-print(p1.gender)
+p1 = Person('Hritik',20,'Badlapur','Male')
+p1.person_info()
+
+print("************************************")
+
+p2 = Person('Rachit',21,'kalyan','Male')
+p2.person_info()
 
 # calling methods
 p1.eat()
 p1.play()
+
+p2.eat()
+p2.play()
+
+print("*****************************")
 
 
 

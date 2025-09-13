@@ -500,6 +500,15 @@ def --inti--(self): is used to write properties
 4. constructor is used to create instance variable of a class
 5. per object constructor will be executed only once
 
+----------------------------------
+self: it is internal reference of an object
+      self always pointing to current object
+      it is something like this keyword in java and javascript
+      
+
+Types of constructor:
+1. zero argument :
+2. Parameterized :
 
 
 

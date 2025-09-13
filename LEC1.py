@@ -2315,14 +2315,27 @@
 
 
 #--------------------------------Constructor-------------------------------
-class Test:
-    def __init__(self):
-        print('Test class constructor')
+# class Test:
+#     def __init__(self):
+#         print('Test class constructor')
 
-t1 = Test()
-t1 = Test()
-t1 = Test()
+# t1 = Test()
+# t1 = Test()
+# t1 = Test()
 
+
+#--------------------------------self keyword -------------------------------------
+
+# class Student:
+#     def __init__(self,name,rollno,age,marks):
+#         self.name = name
+#         self.rollno = rollno
+#         self.age = age
+#         self.marks = marks 
+
+# s1 = Student('AAA',111,89.23)
+# s2 = Student('BBB',222,79) 
+        
 
 
 

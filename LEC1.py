@@ -2270,6 +2270,39 @@
 
 #---------------------------------OOPS------------------------------------------------
 
+# ----------------------------class object-----------------------------------------------
+class Test:
+    " This is test class created for demo purpose"
+
+print(Test.__doc__)
+
+class Person:
+    # objects :
+    def __init__(self):
+        self.name = "Hritik"
+        self.age = 20
+        self.city = "thane"
+        self.gender = "Male"
+
+    # Methods :
+    def eat(self):
+        print('person can eat veg and nonveg')
+    def play(self):
+        print('Playing ludo')
+
+
+# calling objects
+p1 = Person()
+print(p1.name)
+print(p1.age)
+print(p1.city)
+print(p1.gender)
+
+# calling methods
+p1.eat()
+p1.play()
+
+
 
 
 

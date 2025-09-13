@@ -474,8 +474,24 @@ Object Oriented Programming
 3. students -- 1. height
                2. weight
                3. gender
-               1. laugh
+               1. laughing
                2. raise hand
+
+
+class is a conceptual entity doesn't occupy memory
+object is physical entity does occupy memory
+
+
+syntax: class Class_name:
+           doc string   
+           constructor
+           method
+
+syntax object:
+ref_name = Class_Name()
+
+def --inti--(self): is used to write properties
+
 
 
 

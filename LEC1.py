@@ -2254,5 +2254,23 @@
 # else:
 #     raise MinimumAge('sorry you are too small')
 
+#-------------------------------------------program---------------------------------
+
+# class pin(Exception):
+#     def __init__(self,msg):
+#         super().__init__(msg)
+
+# actual_pin = 2282
+# piin = int(input("Enter the pin"))
+
+# if piin == actual_pin:
+#     print("congrats you are logged in")
+# else :
+#     raise pin('sorry cannot login')
+
+#---------------------------------OOPS------------------------------------------------
+
+
+
 
 

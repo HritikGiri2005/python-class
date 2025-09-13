@@ -2271,47 +2271,57 @@
 #---------------------------------OOPS------------------------------------------------
 
 # ----------------------------class object-----------------------------------------------
+# class Test:
+#     " This is test class created for demo purpose"
+
+# print(Test.__doc__)
+
+# class Person:
+#     # objects :
+#     def __init__(self,name,age,city,gender):
+#         self.name = name
+#         self.age = age
+#         self.city = city
+#         self.gender = gender
+
+#     # Methods :
+#     def eat(self):
+#         print('person can eat veg and nonveg')
+#     def play(self):
+#         print('Playing ludo')
+
+#     def person_info(self):
+#         print('Person name :', self.name)
+#         print('Person age :', self.age)
+#         print('Person city :', self.city)
+#         print('Person gender :', self.gender)
+
+
+# # calling objects
+# p1 = Person('Hritik',20,'Badlapur','Male')
+# p1.person_info()
+
+# print("************************************")
+
+# p2 = Person('Rachit',21,'kalyan','Male')
+# p2.person_info()
+
+# # calling methods
+# p1.eat()
+# p1.play()
+
+# p2.eat()
+# p2.play()
+
+
+#--------------------------------Constructor-------------------------------
 class Test:
-    " This is test class created for demo purpose"
+    def __init__(self):
+        print('Test class constructor')
 
-print(Test.__doc__)
-
-class Person:
-    # objects :
-    def __init__(self,name,age,city,gender):
-        self.name = name
-        self.age = age
-        self.city = city
-        self.gender = gender
-
-    # Methods :
-    def eat(self):
-        print('person can eat veg and nonveg')
-    def play(self):
-        print('Playing ludo')
-
-    def person_info(self):
-        print('Person name :', self.name)
-        print('Person age :', self.age)
-        print('Person city :', self.city)
-        print('Person gender :', self.gender)
-
-
-# calling objects
-p1 = Person('Hritik',20,'Badlapur','Male')
-p1.person_info()
-
-print("************************************")
-
-p2 = Person('Rachit',21,'kalyan','Male')
-p2.person_info()
-
-# calling methods
-p1.eat()
-p1.play()
-
-p2.eat()
-p2.play()
+t1 = Test()
+t1 = Test()
+t1 = Test()
 
 
 

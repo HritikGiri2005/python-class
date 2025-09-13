@@ -492,6 +492,14 @@ ref_name = Class_Name()
 
 def --inti--(self): is used to write properties
 
+# ---------------------------------------Constructor----------------------------------
+
+1. it is a special method
+2. name must be __init__(self)
+3. While we create object of the class constructor will be executed automatically
+4. constructor is used to create instance variable of a class
+5. per object constructor will be executed only once
+
 
 
 

@@ -2514,39 +2514,39 @@
 
 
 
-class Account:
-    def __init__(self):
-        self.bankname = "Kotak"
-        self.accno = 'KTK66678910'
-        self.name = "Hritik"
-        self.balance = 10000
+# class Account:
+#     def __init__(self):
+#         self.bankname = "Kotak"
+#         self.accno = 'KTK66678910'
+#         self.name = "Hritik"
+#         self.balance = 10000
 
-    def deposit(self,amount):
-        self.balance = self.balance + amount
+#     def deposit(self,amount):
+#         self.balance = self.balance + amount
 
-    def withdraw(self,amount):
-        class MinBalance(Exception):
-            def __init__(self, msg):
-                super().__init__(msg)
+#     def withdraw(self,amount):
+#         class MinBalance(Exception):
+#             def __init__(self, msg):
+#                 super().__init__(msg)
 
-        if self.balance<amount:
-            raise MinBalance('sorry you are out of balance')
+#         if self.balance<amount:
+#             raise MinBalance('sorry you are out of balance')
         
-        else :
-            self.balance = self.balance - amount
+#         else :
+#             self.balance = self.balance - amount
         
-    def accInfo(self):
-        print("Bank name : ",self.bankname)
-        print("acc no: XXXXXXXX"+self.accno[7:10])
-        print("Bank name : ",self.bankname)
-        print("balance :",self.balance)
+#     def accInfo(self):
+#         print("Bank name : ",self.bankname)
+#         print("acc no: XXXXXXXX"+self.accno[-3:])
+#         print("Bank name : ",self.bankname)
+#         print("balance :",self.balance)
 
 
 
 
-a1 = Account()
-a1.withdraw(10000)
-a1.deposit
-print(a1.balance)
+# a1 = Account()
+# a1.withdraw(10000)
+# a1.deposit(12000)
+# a1.accInfo()
         
 

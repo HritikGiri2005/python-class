@@ -2340,7 +2340,128 @@
 # classname: Employee (eid,ename,esal,dept) action(work(),cal_sal())
 # classname: Dog(color,breed,price) action(eat(),bark())
 
+# solve using zero and parameterized constructor
+
+# class Student:
+#     '''This is a student class for demo purpose'''
+#     def __init__(self):
+#         self.sid = 111
+#         self.name = "Hritik"
+#         self.smarks = 99
+#         self.address = "badlapur"
+
+#     def eat(self):
+#         print("student Eats")
+    
+#     def sleep(self):
+#         print("student sleeps")
+    
+# print(Student.__doc__)
+
+# s1 = Student()
+# print(s1.sid)
+# print(s1.name)
+# print(s1.smarks)
+# print(s1.address)
+
+# s1.eat()
+# s1.sleep()
 
 
+# class Student:
+#     def __init__(self,id,name,marks,school):
+#         self.name = name
+#         self.id = id
+#         self.marks = marks
+#         self.school = school
+    
+#     def eat(self):
+#         print("student Eats")
+    
+#     def sleep(self):
+#         print("student sleeps")
+
+# s1 = Student(111,"Hritik",89,"skv")
+# print(s1.id)
+# print(s1.name)
+# print(s1.marks)
+# print(s1.school)
+# s1.eat()
+# s1.sleep()
+# print("#####################################################")
+# s2 = Student(222,"Rachit",99,'hf')
+# print(s2.id)
+# print(s2.name)
+# print(s2.marks)
+# print(s2.school)
+# s2.eat()
+# s2.sleep()
+
+class Test :
+
+    def __init__(self):
+        self.a = 10
+    def m1(self):
+        self.b = 20
+
+t=Test()
+t.m1()
+print(t.__dict__)
+
+
+#How to access instance variable
+class Test:
+
+    def __init__(self):
+        self.a = 10
+        print(self.a)
+
+    def m1(self):
+        print(self.a)
+
+t = Test()
+t.m1()
+print(t.a)
+
+# static variable :
+class Test:
+    a = 10
+    def __init__(self):
+        Test.b = 20
+    def m1(self):
+        Test.c = 30
+
+    def m2(self):
+        print("Static variable values")
+        print(Test.a)
+        print(Test.b)
+        print(Test.c)
+
+t=Test()
+t.m1()
+print(Test.__dict__)
+t.m2()
+
+
+#How to delete instance variable and static variable
+
+class Test:
+    a=10
+    def __init__(self):
+        self.b = 20
+        Test.c = 30
+
+    def delete_var(self):
+        del Test.a
+        del self.b
+
+t=Test()
+print(Test.__dict__)
+print(t.__dict__)
+
+t.delete_var()
+
+print(Test.__dict__)
+print(t.__dict__)
 
 

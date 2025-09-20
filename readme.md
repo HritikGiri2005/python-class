@@ -520,6 +520,25 @@ when an object is created instance variable is created
 when instance variable is destroyed?
 it is destroyed when object is destroyed
 
+ Instance Method: instance method is any method whose first parameter is self
+
+--> Static variables are always outside object
+
+Python class have 3 types of variables :
+1. Instance variable : Object level Variable
+                    --> declared inside constructor or instance method by using self
+                    access : 1. inside constructor or instance method using self keyword  
+                             2. Outside by using object ref_name
+                    variable value changes per object
+2. Static: Class level Variable
+                    --> declared anywhere by using class name
+                    access: anywhere by using class name
+                    variable value is fixed for all objects
+3. Local Variable: method level Variable
+                    --> declared inside method or constructor parameter
+                    access: only within method
+                    
+
 
 
 

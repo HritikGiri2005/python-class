@@ -2340,6 +2340,52 @@
 # classname: Employee (eid,ename,esal,dept) action(work(),cal_sal())
 # classname: Dog(color,breed,price) action(eat(),bark())
 
+# class Employee:
+#     def __init__(self):
+#         self.eid = 111
+#         self.ename = "Hritik"
+#         self.esal = 66666
+#         self.dept = "IT"
+    
+#     def work(self):
+#         print("working")
+#     def cal_sal(self):
+#         print("calculating salary")
+# e1 = Employee()
+# print(e1.eid)
+# print(e1.ename)
+# print(e1.esal)
+# print(e1.dept)
+
+# e1.work()
+# e1.cal_sal()
+
+# -------------------------------------------------------------------------------------
+
+# class Employee:
+#     def __init__(self,eid,ename,esal,dept):
+#         self.eid = eid
+#         self.ename = ename
+#         self.esal = esal
+#         self.dept = dept
+
+#     def work(self):
+#         print("working")
+#     def cal_sal(self):
+#         print("calculating salary")
+
+# e1 = Employee(111,'Hritik',88888,"IT")
+
+
+
+
+
+
+
+
+
+        
+
 # solve using zero and parameterized constructor
 
 # class Student:
@@ -2397,71 +2443,110 @@
 # s2.eat()
 # s2.sleep()
 
-class Test :
+# class Test :
 
-    def __init__(self):
-        self.a = 10
-    def m1(self):
-        self.b = 20
+#     def __init__(self):
+#         self.a = 10
+#     def m1(self):
+#         self.b = 20
 
-t=Test()
-t.m1()
-print(t.__dict__)
+# t=Test()
+# t.m1()
+# print(t.__dict__)
 
 
-#How to access instance variable
-class Test:
+# #How to access instance variable
+# class Test:
 
-    def __init__(self):
-        self.a = 10
-        print(self.a)
+#     def __init__(self):
+#         self.a = 10
+#         print(self.a)
 
-    def m1(self):
-        print(self.a)
+#     def m1(self):
+#         print(self.a)
 
-t = Test()
-t.m1()
-print(t.a)
+# t = Test()
+# t.m1()
+# print(t.a)
 
-# static variable :
-class Test:
-    a = 10
-    def __init__(self):
-        Test.b = 20
-    def m1(self):
-        Test.c = 30
+# # static variable :
+# class Test:
+#     a = 10
+#     def __init__(self):
+#         Test.b = 20
+#     def m1(self):
+#         Test.c = 30
 
-    def m2(self):
-        print("Static variable values")
-        print(Test.a)
-        print(Test.b)
-        print(Test.c)
+#     def m2(self):
+#         print("Static variable values")
+#         print(Test.a)
+#         print(Test.b)
+#         print(Test.c)
 
-t=Test()
-t.m1()
-print(Test.__dict__)
-t.m2()
+# t=Test()
+# t.m1()
+# print(Test.__dict__)
+# t.m2()
 
 
 #How to delete instance variable and static variable
 
-class Test:
-    a=10
+# class Test:
+#     a=10
+#     def __init__(self):
+#         self.b = 20
+#         Test.c = 30
+
+#     def delete_var(self):
+#         del Test.a
+#         del self.b
+
+# t=Test()
+# print(Test.__dict__)
+# print(t.__dict__)
+
+# t.delete_var()
+
+# print(Test.__dict__)
+# print(t.__dict__)
+
+# ---------------------------------Program-----------------------------------------
+
+
+
+class Account:
     def __init__(self):
-        self.b = 20
-        Test.c = 30
+        self.bankname = "Kotak"
+        self.accno = 'KTK66678910'
+        self.name = "Hritik"
+        self.balance = 10000
 
-    def delete_var(self):
-        del Test.a
-        del self.b
+    def deposit(self,amount):
+        self.balance = self.balance + amount
 
-t=Test()
-print(Test.__dict__)
-print(t.__dict__)
+    def withdraw(self,amount):
+        class MinBalance(Exception):
+            def __init__(self, msg):
+                super().__init__(msg)
 
-t.delete_var()
+        if self.balance<amount:
+            raise MinBalance('sorry you are out of balance')
+        
+        else :
+            self.balance = self.balance - amount
+        
+    def accInfo(self):
+        print("Bank name : ",self.bankname)
+        print("acc no: XXXXXXXX"+self.accno[7:10])
+        print("Bank name : ",self.bankname)
+        print("balance :",self.balance)
 
-print(Test.__dict__)
-print(t.__dict__)
 
+
+
+a1 = Account()
+a1.withdraw(10000)
+a1.deposit
+print(a1.balance)
+        
 

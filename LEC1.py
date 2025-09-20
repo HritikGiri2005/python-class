@@ -2336,6 +2336,9 @@
 # s1 = Student('AAA',111,89.23)
 # s2 = Student('BBB',222,79) 
         
+# -----Assignment-----
+# classname: Employee (eid,ename,esal,dept) action(work(),cal_sal())
+# classname: Dog(color,breed,price) action(eat(),bark())
 
 
 

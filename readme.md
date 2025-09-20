@@ -510,5 +510,16 @@ Types of constructor:
 1. zero argument :
 2. Parameterized :
 
+#instance variable: variable value changes object to object
+we create instance variable inside constructor using self
+we can also create inside instance method
+
+when instance variable gets created ??
+when an object is created instance variable is created
+
+when instance variable is destroyed?
+it is destroyed when object is destroyed
+
+
 
 

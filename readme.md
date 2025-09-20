@@ -490,7 +490,7 @@ syntax: class Class_name:
 syntax object:
 ref_name = Class_Name()
 
-def --inti--(self): is used to write properties
+def __init__(self): is used to write properties
 
 # ---------------------------------------Constructor----------------------------------
 

@@ -2336,9 +2336,8 @@
 # s1 = Student('AAA',111,89.23)
 # s2 = Student('BBB',222,79) 
         
-# -----Assignment-----
+# -----Assignment----------------------------------------------------------
 # classname: Employee (eid,ename,esal,dept) action(work(),cal_sal())
-# classname: Dog(color,breed,price) action(eat(),bark())
 
 # class Employee:
 #     def __init__(self):
@@ -2362,27 +2361,54 @@
 
 # -------------------------------------------------------------------------------------
 
-class Employee:
-    def __init__(self,eid,ename,esal,dept):
-        self.eid = eid
-        self.ename = ename
-        self.esal = esal
-        self.dept = dept
+# class Employee:
+#     def __init__(self,eid,ename,esal,dept):
+#         self.eid = eid
+#         self.ename = ename
+#         self.esal = esal
+#         self.dept = dept
 
-    def work(self):
-        print("working")
-    def cal_sal(self):
-        print("calculating salary")
+#     def work(self):
+#         print("working")
+#     def cal_sal(self):
+#         print("calculating salary")
 
-e1 = Employee(111,'Hritik',88888,"IT")
-e2 = Employee(222,"Rachit",999,"CSE")
-print(e1.eid)
-print(e1.ename)
-print(e1.esal)
-print(e1.dept)
+# e1 = Employee(111,'Hritik',88888,"IT")
+# e2 = Employee(222,"Rachit",999,"CSE")
+# print(e1.eid)
+# print(e1.ename)
+# print(e1.esal)
+# print(e1.dept)
 
-e1.work()
-e1.cal_sal()
+# e1.work()
+# e1.cal_sal()
+
+# ---------------------------------------------------------------------
+
+# classname: Dog(color,breed,price) action(eat(),bark())
+
+class Dog:
+    def __init__(self):
+        self.color = "Brown"
+        self.breed = "German Shepard"
+        self.price = 20000
+
+    def eat(self):
+        print("Dog Eats Pedigree")
+    
+    def bark(self):
+        print("bhow bhow")
+    
+dog1 = Dog()
+print(dog1.color)
+print(dog1.breed)
+print(dog1.price)
+dog1.eat()
+dog1.bark()
+
+# -------------------------------------------------------------------------
+
+
 
 
 # solve using zero and parameterized constructor

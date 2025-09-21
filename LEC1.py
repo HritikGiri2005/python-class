@@ -2387,28 +2387,44 @@
 
 # classname: Dog(color,breed,price) action(eat(),bark())
 
-class Dog:
-    def __init__(self):
-        self.color = "Brown"
-        self.breed = "German Shepard"
-        self.price = 20000
+# class Dog:
+#     def __init__(self):
+#         self.color = "Brown"
+#         self.breed = "German Shepard"
+#         self.price = 20000
 
-    def eat(self):
-        print("Dog Eats Pedigree")
+#     def eat(self):
+#         print("Dog Eats Pedigree")
     
-    def bark(self):
-        print("bhow bhow")
+#     def bark(self):
+#         print("bhow bhow")
     
-dog1 = Dog()
-print(dog1.color)
-print(dog1.breed)
-print(dog1.price)
-dog1.eat()
-dog1.bark()
+# dog1 = Dog()
+# print(dog1.color)
+# print(dog1.breed)
+# print(dog1.price)
+# dog1.eat()
+# dog1.bark()
 
 # -------------------------------------------------------------------------
 
+class Dog:
+    def __init__(self,color,breed,price):
+        self.color = color
+        self.breed = breed
+        self.price = price
 
+    def eat(self):
+        print("Dog eats pedigree")
+
+    def bark(self):
+        print("Bhow Bhow")
+    
+d1 = Dog("Brown","German Shepard",25000)
+d2 = Dog("Black","Labrador",20000)
+
+print(d2.breed)
+d2.bark()
 
 
 # solve using zero and parameterized constructor

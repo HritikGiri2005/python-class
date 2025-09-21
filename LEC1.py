@@ -2362,29 +2362,28 @@
 
 # -------------------------------------------------------------------------------------
 
-# class Employee:
-#     def __init__(self,eid,ename,esal,dept):
-#         self.eid = eid
-#         self.ename = ename
-#         self.esal = esal
-#         self.dept = dept
+class Employee:
+    def __init__(self,eid,ename,esal,dept):
+        self.eid = eid
+        self.ename = ename
+        self.esal = esal
+        self.dept = dept
 
-#     def work(self):
-#         print("working")
-#     def cal_sal(self):
-#         print("calculating salary")
+    def work(self):
+        print("working")
+    def cal_sal(self):
+        print("calculating salary")
 
-# e1 = Employee(111,'Hritik',88888,"IT")
+e1 = Employee(111,'Hritik',88888,"IT")
+e2 = Employee(222,"Rachit",999,"CSE")
+print(e1.eid)
+print(e1.ename)
+print(e1.esal)
+print(e1.dept)
 
+e1.work()
+e1.cal_sal()
 
-
-
-
-
-
-
-
-        
 
 # solve using zero and parameterized constructor
 

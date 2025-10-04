@@ -2632,13 +2632,26 @@
 # t.m1(10) 
 
 #Constructor Overloading:
-class Test:
-    def __init__(self):
-        print('0-arg constructor')
+# class Test:
+#     def __init__(self):
+#         print('0-arg constructor')
     
-    def __init__(self,a):
-        print('1-arg constructor')
+#     def __init__(self,a):
+#         print('1-arg constructor')
 
-t=Test(12)
-t2=Test(123)
+# t=Test(12)
+# t2=Test(123)
+
+#  we can achieve Polymorphism using: 
+# 1. method with default argument
+class Test:
+    def m1(self,a=0,b=0,c=0,d=0):
+        print('m1() executed')
+
+t=Test()
+t.m1()
+t.m1(10)
+t.m1(1,2)
+t.m1(1,2,3)
+
 

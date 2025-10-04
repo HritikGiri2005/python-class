@@ -2664,13 +2664,13 @@
 # t.m1(12,2,4,5,5)
 
 # 3. method with keyword argument
-class Test:
-    def m1(self,name,marks):
-        print(marks)
-        print(name)
+# class Test:
+#     def m1(self,name,marks):
+#         print(marks)
+#         print(name)
 
-t= Test()
-t.m1(name="Hritik",marks = 99)
+# t= Test()
+# t.m1(name="Hritik",marks = 99)
     
 
 
@@ -2704,6 +2704,78 @@ t.m1(name="Hritik",marks = 99)
 #         animal.speak()
 
 # speak_animal(animal_list)
+
+# ----------------------------------------Assignment----------------------------------------
+# Create a class called AreaCalculator that has a method area() which:
+# If given 1 argument calculated the area of the circle
+# If given 2 arguments, calculates the area of the rectangle
+# if given 3 arguments, calculates the area of triangle - ignore the 3rd argument actual mean for simplicity
+
+# import math
+
+# class AreaCalculator:
+#     def area(self,*args):
+
+
+# t= AreaCalculator
+
+# Create Two Classes :
+# Human --> method move() prints "I can Walk"
+# Car --> method move() prints "I can drive"
+# write a function start_journey(obj) that calls move() on any object passed.
+# test it with both the classes
+
+class Human :
+    def move(self):
+        print("I can Walk")
+
+class Car:
+    def move(self):
+        print("I can drive")
+
+list = [Human(),Car()]
+
+def start_journey(obj):
+    for objs in obj:
+        objs.move()
+
+start_journey()
+
+    
+
+
+# Create classes Guitar and Piano with a method play() returning "Strumming guitar" and "playing piano"
+# Write a function perform(musical_instrument) that uses duck typing to call play() and print the result
+
+# create a class Money with rupees and paise.
+# Overload + so that two money objects add correctly, carrying over paise to rupees if needed
+# Example:
+# m1 = Money(8,75)
+# m2 = Money(3,50)
+# print(m1+m2) Should give 12 rupees and 25 paise
+
+# class Money:
+#     def __init__(self,rupee,paise):
+#         self.rupee = rupee
+#         self.paise = paise
+#     def __add__(self,otherrupee,otherpaise):
+#         if self.paise + otherpaise.paise >= 100 :
+#             self.rupee + 1
+#         return self.rupee + otherrupee.rupee and self.paise + otherpaise.paise
+
+    
+#     def __add__(self,otherpaise):
+#         if self.paise + otherpaise.paise >= 100 :
+#             self.rupee + 1
+#             return self.paise + otherpaise.paise
+        
+
+
+# m1 = Money(1,40)   
+# m2 = Money(2,8)
+
+# print(m1+m2)
+
 
 
 

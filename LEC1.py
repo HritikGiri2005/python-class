@@ -2644,24 +2644,65 @@
 
 #  we can achieve Polymorphism using: 
 # 1. method with default argument
-class Test:
-    def m1(self,a=0,b=0,c=0,d=0):
-        print('m1() executed')
+# class Test:
+#     def m1(self,a=0,b=0,c=0,d=0):
+#         print('m1() executed')
 
-t=Test()
-t.m1()
-t.m1(10)
-t.m1(1,2)
-t.m1(1,2,3)
+# t=Test()
+# t.m1()
+# t.m1(10)
+# t.m1(1,2)
+# t.m1(1,2,3)
+
+# 2. method with var-args argument
+# class Test:
+#     def m1(self,*args):
+#         print("m1() executed")
+
+# t = Test()
+# t.m1()
+# t.m1(12,2,4,5,5)
+
+3. method with keyword argument
+class Test:
+    def m1(self,name,marks):
+        print(marks)
+        print(name)
+    m1()
+    
 
 
 # 2. Constructor with default argument
-class Test:
-    def __init__(self,a=0,b=0,c=0,d=0):
-        print("consructor executed")
+# class Test:
+#     def __init__(self,a=0,b=0,c=0,d=0):
+#         print("consructor executed")
 
-t = Test(12)
-t2 = Test(123)
-t3 = Test(124)
+# t = Test(12)
+# t2 = Test(123)
+# t3 = Test(124)
+
+# Duck Typing Phylosophy of python
+
+class Cat:
+    def speak(self):
+        print("Meoww Meoww")
+
+class Dog:
+    def speak(self):
+        print("Bhow Bhow")
+
+class Goat:
+    def speak(self):
+        print("Myahhhh Myahhhh")
+
+animal_list = [Cat(),Dog(),Goat()]
+
+def speak_animal(animals):
+    for animal in animals:
+        animal.speak()
+
+speak_animal(animal_list)
+
+
 
 

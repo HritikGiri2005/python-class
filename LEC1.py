@@ -2655,3 +2655,13 @@ t.m1(1,2)
 t.m1(1,2,3)
 
 
+# 2. Constructor with default argument
+class Test:
+    def __init__(self,a=0,b=0,c=0,d=0):
+        print("consructor executed")
+
+t = Test(12)
+t2 = Test(123)
+t3 = Test(124)
+
+

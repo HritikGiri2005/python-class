@@ -537,6 +537,32 @@ Python class have 3 types of variables :
 3. Local Variable: method level Variable
                     --> declared inside method or constructor parameter
                     access: only within method
+
+<!-- ---------------------------------------------POLYMORPHISM---------------------------------------------------------- -->
+Poly : many
+Morph : forms
+
+Advantage : Code Flexibility
+For implementing Polymorphism we use:
+overloading:
+    Operator Overloading: Same operator having different behaviour on different objects
+    Method Overloading: Same Method name but different parameter is called method overloading
+                        Note: In python Method overloading is not supported
+
+                        But in python we can achieve overloading benefit by using :
+                        1. Method with default argument
+                        2. Method with var-args argument
+                        3. Method with keyword argument
+method overriding
+    Constructor Overloading: constructor with same name but different parameter is called constructor overloading
+                        Note: In python Constructor overloading is not supported
+
+                        But in python we can achieve overloading benefit by using :
+                        1. Method with default argument
+                        2. Method with var-args argument
+                        3. Method with keyword argument
+method overriding
+Duck Typing Phylosophy of Python
                     
 
 

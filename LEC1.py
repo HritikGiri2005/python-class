@@ -2408,23 +2408,23 @@
 
 # -------------------------------------------------------------------------
 
-class Dog:
-    def __init__(self,color,breed,price):
-        self.color = color
-        self.breed = breed
-        self.price = price
+# class Dog:
+#     def __init__(self,color,breed,price):
+#         self.color = color
+#         self.breed = breed
+#         self.price = price
 
-    def eat(self):
-        print("Dog eats pedigree")
+#     def eat(self):
+#         print("Dog eats pedigree")
 
-    def bark(self):
-        print("Bhow Bhow")
+#     def bark(self):
+#         print("Bhow Bhow")
     
-d1 = Dog("Brown","German Shepard",25000)
-d2 = Dog("Black","Labrador",20000)
+# d1 = Dog("Brown","German Shepard",25000)
+# d2 = Dog("Black","Labrador",20000)
 
-print(d2.breed)
-d2.bark()
+# print(d2.breed)
+# d2.bark()
 
 
 # solve using zero and parameterized constructor
@@ -2589,5 +2589,56 @@ d2.bark()
 # a1.withdraw(10000)
 # a1.deposit(12000)
 # a1.accInfo()
-        
+
+
+# --------------------------------------------------------------POLYMORPHISM--------------------------------------------------
+
+# operator overloading: 
+# print(10+20)
+# print("Python "+"Java")
+
+# print(2*"Java")
+
+# class Student:
+#     def __init__(self,marks):
+#         self.marks=marks
+
+#     def __add__(self,other):
+#         return self.marks + other.marks
+
+#     def __sub__(self,other):
+#         return self.marks - other.marks
+
+#     def __gt__(self,other):
+#         return self.marks > other.marks
+    
+# s1 = Student(20)
+# s2 = Student(50)
+
+# print("addition of marks = ",s1+s2)
+# print("subtraction of marks = ",s1-s2)
+# print("greater of marks = ",s1>s2)
+
+# method overloading:
+# class Test:
+#     def m1(self):
+#         print('0 argument m1()')
+    
+#     def m2(self,a):
+#         print('1 argument m1()')
+
+# t = Test()
+# t.m1()
+# t.m1(10) 
+
+#Constructor Overloading:
+class Test:
+    def __init__(self):
+        print('0-arg constructor')
+    
+    def __init__(self,a):
+        print('1-arg constructor')
+
+t=Test(12)
+t2=Test(123)
 

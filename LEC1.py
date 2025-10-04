@@ -2663,12 +2663,14 @@
 # t.m1()
 # t.m1(12,2,4,5,5)
 
-3. method with keyword argument
+# 3. method with keyword argument
 class Test:
     def m1(self,name,marks):
         print(marks)
         print(name)
-    m1()
+
+t= Test()
+t.m1(name="Hritik",marks = 99)
     
 
 
@@ -2683,25 +2685,25 @@ class Test:
 
 # Duck Typing Phylosophy of python
 
-class Cat:
-    def speak(self):
-        print("Meoww Meoww")
+# class Cat:
+#     def speak(self):
+#         print("Meoww Meoww")
 
-class Dog:
-    def speak(self):
-        print("Bhow Bhow")
+# class Dog:
+#     def speak(self):
+#         print("Bhow Bhow")
 
-class Goat:
-    def speak(self):
-        print("Myahhhh Myahhhh")
+# class Goat:
+#     def speak(self):
+#         print("Myahhhh Myahhhh")
 
-animal_list = [Cat(),Dog(),Goat()]
+# animal_list = [Cat(),Dog(),Goat()]
 
-def speak_animal(animals):
-    for animal in animals:
-        animal.speak()
+# def speak_animal(animals):
+#     for animal in animals:
+#         animal.speak()
 
-speak_animal(animal_list)
+# speak_animal(animal_list)
 
 
 

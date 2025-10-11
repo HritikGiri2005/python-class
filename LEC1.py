@@ -2713,8 +2713,26 @@
 
 # import math
 
-# class AreaCalculator:
-#     def area(self,*args):
+class AreaCalculator:
+    def area(self,*a):
+        if len(a)==1:
+            for i in a: 
+                area = 3.14*i*i
+            print("Area of circle is =",area)
+
+        if len(a)==2:
+            area_rect = 1
+            for x in a: 
+                area_rect = area_rect*x
+            print("Area of rect is =",area_rect)
+        
+        if len(a)==3:
+            area_tri = 0.5*a[0]*a[1]
+            print("Area of triangle is =",area_tri)
+
+obj = AreaCalculator()
+obj.area(10,20)
+obj.area(1,2,3)
 
 
 # t= AreaCalculator
@@ -2725,21 +2743,21 @@
 # write a function start_journey(obj) that calls move() on any object passed.
 # test it with both the classes
 
-class Human :
-    def move(self):
-        print("I can Walk")
+# class Human :
+#     def move(self):
+#         print("I can Walk")
 
-class Car:
-    def move(self):
-        print("I can drive")
+# class Car:
+#     def move(self):
+#         print("I can drive")
 
-list = [Human(),Car()]
+# list = [Human(),Car()]
 
-def start_journey(obj):
-    for objs in obj:
-        objs.move()
+# def start_journey(obj):
+#     for objs in obj:
+#         objs.move()
 
-start_journey()
+# start_journey()
 
     
 

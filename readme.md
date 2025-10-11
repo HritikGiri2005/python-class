@@ -569,7 +569,16 @@ Duck Typing Phylosophy of Python
 
 same method inside parent class as well as child class but different implementation--------------------
 
-                    
+# -------------------------------------------ENCAPSULATION----------------------------------------------------
+
+Encapsulation Provides security
+1. Property Must be private
+        In Python if we use (__) before variable name then that variable is considered as a private method
+2. Each Property must have pair of setter and getter method
+
+
+Disadvantages :
+1. Length of code increases
 
 
 

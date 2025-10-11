@@ -2838,3 +2838,22 @@
 # upi = UPI()
 # credit.pay(500)
 # upi.pay(500)
+
+
+# -------------------------------------------------------------------------------------------
+
+class Account():
+    def __init__(self):
+        self.__pin = 4444
+
+    def setPin(self,pin):
+        self.__pin = pin
+
+    def getPin(self):
+        return self.__pin
+    
+a = Account()
+print(a.getPin())
+a.setPin(1111)
+print(a.getPin())
+

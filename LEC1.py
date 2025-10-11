@@ -2858,56 +2858,128 @@
 # print(a.getPin())
 
 # ----------------------------------------------------------------------------------------------------------
-class BankAccount:
-    def __init__(self):
-        self.__balance = 0
+# class BankAccount:
+#     def __init__(self):
+#         self.__balance = 0
 
-    def setBalance(self,balance):
-        class Notadmin(Exception):
-            def __init__(self,msg):
-                super().__init__(msg)
+#     def setBalance(self,balance):
+#         class Notadmin(Exception):
+#             def __init__(self,msg):
+#                 super().__init__(msg)
         
-        admin  = input("Are you admin ? (True/False) : ")
-        if admin == False:
-            raise Notadmin("You are not admin, you can't set")
-        else:
-            self.__balance = balance
+#         admin  = input("Are you admin ? (True/False) : ")
+#         if admin == False:
+#             raise Notadmin("You are not admin, you can't set")
+#         else:
+#             self.__balance = balance
 
-    def getBalance(self):
-        return self.__balance
+#     def getBalance(self):
+#         return self.__balance
     
-    def withdraw(self,amount):
-        class MinBalance(Exception):
-            def __init__(self, msg):
-                super().__init__(msg)
+#     def withdraw(self,amount):
+#         class MinBalance(Exception):
+#             def __init__(self, msg):
+#                 super().__init__(msg)
 
-        if self.__balance<amount:
-            raise MinBalance('sorry you are out of balance')
+#         if self.__balance<amount:
+#             raise MinBalance('sorry you are out of balance')
         
-        else :
-            self.__balance = self.__balance - amount
+#         else :
+#             self.__balance = self.__balance - amount
 
-    def deposit(self,amount):
-        class NegativeAmt(Exception):
-            def __init__(self, msg):
-                super().__init__(msg)
+#     def deposit(self,amount):
+#         class NegativeAmt(Exception):
+#             def __init__(self, msg):
+#                 super().__init__(msg)
 
-        if amount <= 0:
-            raise NegativeAmt("Please enter amount greater than 0")
+#         if amount <= 0:
+#             raise NegativeAmt("Please enter amount greater than 0")
         
-        else:
-            self.__balance = self.__balance + amount
+#         else:
+#             self.__balance = self.__balance + amount
 
-b = BankAccount()
+# b = BankAccount()
 
-print(b.getBalance())
-b.withdraw(100)
-print(b.getBalance())
-b.deposit(10000)
-print(b.getBalance())
-b.setBalance(1000)
-print(b.getBalance())
+# print(b.getBalance())
+# b.withdraw(100)
+# print(b.getBalance())
+# b.deposit(10000)
+# print(b.getBalance())
+# b.setBalance(1000)
+# print(b.getBalance())
 
+# ----------------------------------------------------------------------
+# How to create abstract class
+#how to create abstract method
+
+# from abc import *
+
+# class Test(ABC):
+#     def m1(self):
+#         print('m1() of abstract class Test')
+
+
+# t=Test()
+# t.m1()
+
+# class Test(ABC):
+#     @abstractmethod
+
+#     def m1(self):pass
+
+# t = Test() #TypeError: Can't instantiate abstract class Test without an implementation for abstract method 'm1'
+
+#Abstract class with abstract method object creation is not possible
+
+# from abc import *
+# class Game(ABC):
+#     @abstractmethod
+#     def play(self): pass
+
+# class Cricket(Game):
+#     def play(self):print("Playing cricket")
+
+# class Football(Game):
+#     def play(self):print("Playing Football")
+
+# c=Cricket()
+# c.play()
+
+# f=Football()
+# f.play()
+
+from abc import *
+
+class Employee(ABC):
+    def __init__(self,name,employee_id):
+        self.name = name
+        self.employee_id = employee_id
+
+    @abstractmethod
+    def calculate_pay(self):
+        pass
+
+    def display(self):
+        pay = self.calculate_pay()
+        print(f"Name: {self.name}")
+        print(f"ID: {self.employee_id}")
+        print(f"Pay: ${pay: .2f}")
+        print("-" * 30)
+
+
+class SalariedEmployee(Employee):
+    def __init__(self, name, employee_id,monthly_salary):
+        super().__init__(name,employee_id)
+        self.monthly_salary = monthly_salary
+
+class HourlyEmployee(Employee):
+    def __init__(self, name, employee_id,hourly_rate,hours_worked):
+        super().__init__(name, employee_id)
+        self.hourly_rate = hourly_rate
+        self.hours_worked = hours_worked
+
+    def calculate_pay(self):
+        return self.hourly_rate*self.hours_worked
 
 
 

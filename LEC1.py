@@ -2798,18 +2798,43 @@
 # ----------------------------------method overriding----------------------------------
 
 # example:
-class Parent:
-    def m1(self):
-        print("Parent class method")
+# class Parent:
+#     def m1(self):
+#         print("Parent class method")
 
-class Child(Parent):
-    def m1(self):
-        print("Child class method")
+# class Child(Parent):
+#     def m1(self):
+#         print("Child class method")
 
-c = Child()
-c.m1()
+# c = Child()
+# c.m1()
 
+# ----------------------------------------------------------------------------------------------------------
+# Create a base class Payment with a method pay(amount) that prints "Processing payment of amount".
+# create two subclasses:
 
+# CreditCardPayment -> override pay to print "Paying {amount} using Credit Card "
+# UPIPayment -> override pay to print "Paying {amount} using UPI "
 
+# Create objects of both subclasses and call pay()
 
+# o/p:
+# paying 500 using credit Card
+# paying 500 using upi
 
+# class Payment:
+#     def pay(self,amount):
+#         print(f"Processing payment of {amount} ")
+
+# class CreditCardPayment(Payment):
+#     def pay(self,amount):
+#         print(f"Paying {amount} using Credit Card")
+
+# class UPI(Payment):
+#     def pay(self,amount):
+#         print(f"Paying {amount} using UPI")
+
+# credit = CreditCardPayment()
+# upi = UPI()
+# credit.pay(500)
+# upi.pay(500)

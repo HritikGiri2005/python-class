@@ -563,6 +563,12 @@ method overriding
                         3. Method with keyword argument
 method overriding
 Duck Typing Phylosophy of Python
+
+
+# ------------------------------------------------Method Overriding--------------------------------
+
+same method inside parent class as well as child class but different implementation--------------------
+
                     
 
 

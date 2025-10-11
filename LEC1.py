@@ -2713,26 +2713,26 @@
 
 # import math
 
-class AreaCalculator:
-    def area(self,*a):
-        if len(a)==1:
-            for i in a: 
-                area = 3.14*i*i
-            print("Area of circle is =",area)
+# class AreaCalculator:
+#     def area(self,*a):
+#         if len(a)==1:
+#             for i in a: 
+#                 area = 3.14*i*i
+#             print("Area of circle is =",area)
 
-        if len(a)==2:
-            area_rect = 1
-            for x in a: 
-                area_rect = area_rect*x
-            print("Area of rect is =",area_rect)
+#         if len(a)==2:
+#             area_rect = 1
+#             for x in a: 
+#                 area_rect = area_rect*x
+#             print("Area of rect is =",area_rect)
         
-        if len(a)==3:
-            area_tri = 0.5*a[0]*a[1]
-            print("Area of triangle is =",area_tri)
+#         if len(a)==3:
+#             area_tri = 0.5*a[0]*a[1]
+#             print("Area of triangle is =",area_tri)
 
-obj = AreaCalculator()
-obj.area(10,20)
-obj.area(1,2,3)
+# obj = AreaCalculator()
+# obj.area(10,20)
+# obj.area(1,2,3)
 
 
 # t= AreaCalculator
@@ -2793,6 +2793,21 @@ obj.area(1,2,3)
 # m2 = Money(2,8)
 
 # print(m1+m2)
+
+
+# ----------------------------------method overriding----------------------------------
+
+# example:
+class Parent:
+    def m1(self):
+        print("Parent class method")
+
+class Child(Parent):
+    def m1(self):
+        print("Child class method")
+
+c = Child()
+c.m1()
 
 
 

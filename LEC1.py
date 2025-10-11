@@ -2842,18 +2842,72 @@
 
 # -------------------------------------------------------------------------------------------
 
-class Account():
-    def __init__(self):
-        self.__pin = 4444
+# class Account():
+#     def __init__(self):
+#         self.__pin = 4444
 
-    def setPin(self,pin):
-        self.__pin = pin
+#     def setPin(self,pin):
+#         self.__pin = pin
 
-    def getPin(self):
-        return self.__pin
+#     def getPin(self):
+#         return self.__pin
     
-a = Account()
-print(a.getPin())
-a.setPin(1111)
-print(a.getPin())
+# a = Account()
+# print(a.getPin())
+# a.setPin(1111)
+# print(a.getPin())
+
+# ----------------------------------------------------------------------------------------------------------
+class BankAccount:
+    def __init__(self):
+        self.__balance = 0
+
+    def setBalance(self,balance):
+        class Notadmin(Exception):
+            def __init__(self,msg):
+                super().__init__(msg)
+        
+        admin  = input("Are you admin ? (True/False) : ")
+        if admin == False:
+            raise Notadmin("You are not admin, you can't set")
+        else:
+            self.__balance = balance
+
+    def getBalance(self):
+        return self.__balance
+    
+    def withdraw(self,amount):
+        class MinBalance(Exception):
+            def __init__(self, msg):
+                super().__init__(msg)
+
+        if self.__balance<amount:
+            raise MinBalance('sorry you are out of balance')
+        
+        else :
+            self.__balance = self.__balance - amount
+
+    def deposit(self,amount):
+        class NegativeAmt(Exception):
+            def __init__(self, msg):
+                super().__init__(msg)
+
+        if amount <= 0:
+            raise NegativeAmt("Please enter amount greater than 0")
+        
+        else:
+            self.__balance = self.__balance + amount
+
+b = BankAccount()
+
+print(b.getBalance())
+b.withdraw(100)
+print(b.getBalance())
+b.deposit(10000)
+print(b.getBalance())
+b.setBalance(1000)
+print(b.getBalance())
+
+
+
 

@@ -1,5 +1,4 @@
-    # def __add__(self,otherpaise):
-    #     if self.paise + otherpaise.paise >= 100 :
-    #         self.rupee + 1
-    #         return self.paise + otherpaise.paise
-        
+b.withdraw(100)
+# print(b.getBalance())
+# b.deposit(10000)
+# print(b.getBalance())

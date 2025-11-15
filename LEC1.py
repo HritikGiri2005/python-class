@@ -3050,7 +3050,70 @@ import re
 # matches = re.split(',','python,java,react,node')
 # print(matches)
 
-# ----------------------------------MultiTreading------------------------
+# ----------------------------------MultiThreading------------------------
+# import datetime
+# import time
+# from threading import *
+
+# # by using function
+
+# # def f1():
+# #     for i in range(10):
+# #         print('Child thread')
+
+# # t = Thread(target=f1)
+# # t.start()
+# # for i in range(10):
+# #     print('Main thread')
+
+# # by extending Thread 
+
+# # class MyThread(Thread):
+# #     def run(self):
+# #         for i in range(10):
+# #             print('child Thread')
+
+
+# # mt = MyThread()
+# # mt.start()
+# # for i in range(10):
+# #     print("Main Thread")
+
+# #without extending Thread Class
+
+# # class MyThread:
+# #     def job(self):
+# #         for i in range(10):
+# #             print("Child Thread")
+# # mt = MyThread()
+# # t= Thread(target=mt.job)
+# # t.start()
+# # for i in range(10):
+# #     print('Main Thread')
+
+# def double(number_list):
+#     for number in number_list:
+#         print('Double:' ,number*2)
+#         time.sleep(2)
+
+# def square(number_list):
+#     for number in number_list:
+#         print('Square :',number*number)
+#         time.sleep(2)
+
+# numbers = [1,2,3,4,5,6,7,8,9]
+# begining_time = datetime.datetime.now()
+
+# t1 = Thread(target=double,args=(numbers,))
+# t2 = Thread(target=square,args=(numbers,))
+# t1.start()
+# t2.start()
+# t1.join()
+# t2.join()
+
+# print('Total time:',datetime.datetime.now() - begining_time)
+
+
 
 
 

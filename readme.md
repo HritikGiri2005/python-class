@@ -612,7 +612,11 @@ Disadvantages :
 9. split()
 
 
-# -------------------------------------
+# -------------------------------------MULTITHREADING------------------------------------
+
+TASK : Multiple threads execute simultaneously
+
+used in game , server, animation, graphicus
 
 
 

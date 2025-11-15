@@ -618,5 +618,10 @@ TASK : Multiple threads execute simultaneously
 
 used in game , server, animation, graphicus
 
+# ---------------------------SYNCHRONIZATION-------------------------------------
+THREAD SAFE
+
+DONE USING Lock()
+
 
 

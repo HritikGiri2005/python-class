@@ -3114,7 +3114,45 @@ import re
 # print('Total time:',datetime.datetime.now() - begining_time)
 
 
+# -----------------------------------------------Setting and getting thread name--------------------------
 
+from threading import *
+import time
+# def f1():
+#     print('child thread')
+
+# t = Thread(target=f1)
+# t2 = Thread(target=f1)
+# t.start()
+# print('Name :',t.name)
+# t.name = 'MyThread-1'
+# print('Name :',t.name)
+# print('Thread identification number :',t.ident)
+
+# #--------------------------------------------------Daemon Thread---------------------------------
+# print(t2.isDaemon())
+# t2.setDaemon(True)
+# print(t2.isDaemon())
+# t.setDaemon(True) 
+
+#synchronization : thread safe
+l=Lock()
+def wish(name):
+
+    l.acquire()
+    for i in range(5):
+        print('Hello :',name)
+        time.sleep(2)
+    l.release()
+
+
+t1=Thread(target=wish,args=('Dhoni',))
+t2=Thread(target=wish,args=('Katrina',))
+t3=Thread(target=wish,args=('Rohit',))
+
+t1.start()
+t2.start()
+t3.start()
 
 
 

@@ -3047,8 +3047,10 @@ import re
 # print(matches)
 
 #split()
-matches = re.split(',','python,java,react,node')
-print(matches)
+# matches = re.split(',','python,java,react,node')
+# print(matches)
+
+# ----------------------------------MultiTreading------------------------
 
 
 

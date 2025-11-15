@@ -2948,38 +2948,117 @@
 # f=Football()
 # f.play()
 
-from abc import *
+# from abc import *
 
-class Employee(ABC):
-    def __init__(self,name,employee_id):
-        self.name = name
-        self.employee_id = employee_id
+# class Employee(ABC):
+#     def __init__(self,name,employee_id):
+#         self.name = name
+#         self.employee_id = employee_id
 
-    @abstractmethod
-    def calculate_pay(self):
-        pass
+#     @abstractmethod
+#     def calculate_pay(self):
+#         pass
 
-    def display(self):
-        pay = self.calculate_pay()
-        print(f"Name: {self.name}")
-        print(f"ID: {self.employee_id}")
-        print(f"Pay: ${pay: .2f}")
-        print("-" * 30)
+#     def display(self):
+#         pay = self.calculate_pay()
+#         print(f"Name: {self.name}")
+#         print(f"ID: {self.employee_id}")
+#         print(f"Pay: ${pay: .2f}")
+#         print("-" * 30)
 
 
-class SalariedEmployee(Employee):
-    def __init__(self, name, employee_id,monthly_salary):
-        super().__init__(name,employee_id)
-        self.monthly_salary = monthly_salary
+# class SalariedEmployee(Employee):
+#     def __init__(self, name, employee_id,monthly_salary):
+#         super().__init__(name,employee_id)
+#         self.monthly_salary = monthly_salary
 
-class HourlyEmployee(Employee):
-    def __init__(self, name, employee_id,hourly_rate,hours_worked):
-        super().__init__(name, employee_id)
-        self.hourly_rate = hourly_rate
-        self.hours_worked = hours_worked
+# class HourlyEmployee(Employee):
+#     def __init__(self, name, employee_id,hourly_rate,hours_worked):
+#         super().__init__(name, employee_id)
+#         self.hourly_rate = hourly_rate
+#         self.hours_worked = hours_worked
 
-    def calculate_pay(self):
-        return self.hourly_rate*self.hours_worked
+#     def calculate_pay(self):
+#         return self.hourly_rate*self.hours_worked
+
+
+
+# ------------------------pattern matching using RE----------------------------
+
+# import re
+
+# pattern = re.compile('baba')
+# s = 'ababababababba'
+# matches = re.finditer(pattern,s)
+# for match in matches:
+#     print(match.start(),"-----------",match.end(),'----------',match.group())
+
+# # -------------------------------without compile
+
+# s = 'abababababbba'
+# matches = re.finditer('aba',s)
+# for match in matches:
+#     print(match.start(),"-----------",match.end(),'----------',match.group())
+
+# -----------------------------------------------------------------------------------------
+
+import re
+# matches = re.finditer('\S','a1Pb@9ctA')
+# for match in matches:
+#     print(match.start(),'----------',match.end(),'--------',match.group())
+
+# matches = re.finditer('a{2,3}','aababaaaababb')
+# for match in matches:
+#     print(match.start(),'----------',match.end(),'------------',match.group())
+
+#match()
+# target = input('Enter Target')
+# m = re.match('python is simple to learn',target)
+# if m!=None:
+#     print('target fully match with pattern')
+# else:
+#     print('target fully not match with pattern')
+
+#fullmatch()
+# target = input('Enter Target')
+# m = re.fullmatch('python is simple to learn',target)
+# if m!=None:
+#     print('target fully match with pattern')
+# else:
+#     print('target fully not match with pattern')
+
+#search()
+# target = input("enter target: ")
+# m = re.search("python",target)
+# if m!=None:
+#     print('pattern found')
+# else: print('pattern not found')
+
+#findall()
+# matches = re.findall('ab','ababababba')
+# print(matches)
+
+#sub()
+# matches=re.sub('b','#','ababababbabaa')
+# print(matches)
+
+#subn()
+# matches = re.subn('b','#','abababababab')
+# print(matches)
+
+#split()
+matches = re.split(',','python,java,react,node')
+print(matches)
+
+
+
+
+
+
+
+
+
+
 
 
 

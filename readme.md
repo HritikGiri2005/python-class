@@ -580,6 +580,39 @@ Encapsulation Provides security
 Disadvantages :
 1. Length of code increases
 
+# ----------------------------------------- REGULAR EXPRESSION---------------------------------
+
+- character classes:
+[abc]
+[a-z]
+[A-Z]
+[0-9]
+[a-zA-Z0-9]
+[^a-zA-Z0-9]
+
+- PREDEFINED CHARACTER CLASSES:
+
+\d
+\D
+\w
+\W
+\s
+\S
+
+- Important functions of re module
+-------------------------------------
+1. compile()
+2. finditer()
+3. match()
+4. fullmatch()
+5. search()
+6. findall()
+7. sub()
+8. subn()
+9. split()
+
+
+# -------------------------------------
 
 
 
